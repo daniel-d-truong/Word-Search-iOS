@@ -15,6 +15,8 @@
 		CBA46BEA245A8BF500864632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA46BE8245A8BF500864632 /* LaunchScreen.storyboard */; };
 		CBA46BF5245A8BF500864632 /* WordSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA46BF4245A8BF500864632 /* WordSearchTests.swift */; };
 		CBA46C00245A8BF500864632 /* WordSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA46BFF245A8BF500864632 /* WordSearchUITests.swift */; };
+		CBA46C0E245A913100864632 /* WordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA46C0D245A913100864632 /* WordCollectionViewCell.swift */; };
+		CBA46C12245A938D00864632 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA46C11245A938D00864632 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CBA46BFB245A8BF500864632 /* WordSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA46BFF245A8BF500864632 /* WordSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSearchUITests.swift; sourceTree = "<group>"; };
 		CBA46C01245A8BF500864632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA46C0D245A913100864632 /* WordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBA46C11245A938D00864632 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,14 @@
 		CBA46BDC245A8BF300864632 /* WordSearch */ = {
 			isa = PBXGroup;
 			children = (
+				CBA46C0F245A935C00864632 /* Controllers */,
 				CBA46BDD245A8BF300864632 /* AppDelegate.swift */,
 				CBA46BDF245A8BF300864632 /* SceneDelegate.swift */,
-				CBA46BE1245A8BF300864632 /* ViewController.swift */,
 				CBA46BE3245A8BF300864632 /* Main.storyboard */,
 				CBA46BE6245A8BF500864632 /* Assets.xcassets */,
 				CBA46BE8245A8BF500864632 /* LaunchScreen.storyboard */,
 				CBA46BEB245A8BF500864632 /* Info.plist */,
+				CBA46C11245A938D00864632 /* Utils.swift */,
 			);
 			path = WordSearch;
 			sourceTree = "<group>";
@@ -126,6 +131,15 @@
 				CBA46C01245A8BF500864632 /* Info.plist */,
 			);
 			path = WordSearchUITests;
+			sourceTree = "<group>";
+		};
+		CBA46C0F245A935C00864632 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBA46BE1245A8BF300864632 /* ViewController.swift */,
+				CBA46C0D245A913100864632 /* WordCollectionViewCell.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA46C12245A938D00864632 /* Utils.swift in Sources */,
 				CBA46BE2245A8BF300864632 /* ViewController.swift in Sources */,
 				CBA46BDE245A8BF300864632 /* AppDelegate.swift in Sources */,
+				CBA46C0E245A913100864632 /* WordCollectionViewCell.swift in Sources */,
 				CBA46BE0245A8BF300864632 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UT46Q8ZZ92;
 				INFOPLIST_FILE = WordSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UT46Q8ZZ92;
 				INFOPLIST_FILE = WordSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
