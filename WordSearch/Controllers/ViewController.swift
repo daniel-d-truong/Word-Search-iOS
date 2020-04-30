@@ -21,6 +21,8 @@ class ViewController: UIViewController {
 
         wordSearchView.delegate = self
         wordSearchView.dataSource = self
+        
+        self.wordSearchView.isScrollEnabled = false
     }
 
     
@@ -29,6 +31,7 @@ class ViewController: UIViewController {
     
 }
 
+// Collection View Protocols
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 100
@@ -37,5 +40,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = wordSearchView.dequeueReusableCell(withReuseIdentifier: WordCollectionViewCell.reuseIdentifier, for: indexPath)
         return cell
+    }
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let dim = 10
+        return CGSize(width: Double(self.wordSearchView.bounds.width)/Double(dim), height: Double(self.wordSearchView.bounds.height)/Double(dim))
     }
 }
