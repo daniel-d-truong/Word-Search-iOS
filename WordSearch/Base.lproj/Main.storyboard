@@ -46,6 +46,9 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="50" height="50"/>
+                                        <connections>
+                                            <outlet property="letterLabel" destination="UGA-i7-OTo" id="CcA-Va-FiL"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

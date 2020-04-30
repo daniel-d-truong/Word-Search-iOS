@@ -10,4 +10,5 @@ import UIKit
 
 class WordCollectionViewCell: UICollectionViewCell {
     static let reuseIdentifier = "WordCell"
+    @IBOutlet weak var letterLabel: UILabel!
 }

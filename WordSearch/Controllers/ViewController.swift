@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     
     /// Label to display number of words found
     @IBOutlet weak var wordsScore: UILabel!
+    var wordGrid: [[String]] = []
+    let dim = 10
+    let defaultList = ["Swift", "Kotlin", "ObjectiveC", "Variable", "Java", "Mobile"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,8 @@ class ViewController: UIViewController {
         wordSearchView.dataSource = self
         
         self.wordSearchView.isScrollEnabled = false
+        
+        self.wordGrid = generateWordSearch(wordsList: defaultList)
     }
 
     
@@ -38,14 +43,14 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = wordSearchView.dequeueReusableCell(withReuseIdentifier: WordCollectionViewCell.reuseIdentifier, for: indexPath)
+        let cell = wordSearchView.dequeueReusableCell(withReuseIdentifier: WordCollectionViewCell.reuseIdentifier, for: indexPath) as! WordCollectionViewCell
+        cell.letterLabel.text = self.wordGrid[indexPath.row/dim][indexPath.row%dim]
         return cell
     }
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let dim = 10
-        return CGSize(width: Double(self.wordSearchView.bounds.width)/Double(dim), height: Double(self.wordSearchView.bounds.height)/Double(dim))
+        return CGSize(width: Double(self.wordSearchView.bounds.width)/Double(self.dim), height: Double(self.wordSearchView.bounds.height)/Double(self.dim))
     }
 }
