@@ -22,10 +22,10 @@ struct WordDirections {
 
 var DIRECTIONS_LIST = [WordDirections.RIGHT, WordDirections.LEFT, WordDirections.UP, WordDirections.DOWN, WordDirections.UP_RIGHT, WordDirections.UP_LEFT, WordDirections.DOWN_LEFT, WordDirections.DOWN_RIGHT]
 
+typealias DIRECTION = (Int, Int)
+typealias POSITION = (Int, Int)
+
 class WordBoard {
-    typealias DIRECTION = (Int, Int)
-    typealias POSITION = (Int, Int)
-    
     let NONE_DIR = (0, 0)
     let NONE_POS = (-1, -1)
     
