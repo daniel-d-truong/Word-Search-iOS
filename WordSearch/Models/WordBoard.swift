@@ -33,14 +33,16 @@ class WordBoard {
     var wordGrid: [[Character]]
     var dim: Int
     var wordPosition: [String: (POSITION, DIRECTION)]
+    var wordPosCount: [[Int]]
     
     init(dim: Int, wordsList: [String]) {
         self.wordsList = wordsList.map({ $0.lowercased() })
         self.wordGrid = [[Character]](repeating: [Character](repeating: "_", count: dim), count: dim)
         self.dim = dim
         self.wordPosition = [:]
+        self.wordPosCount = [[Int]](repeating: [Int](repeating: 0, count: dim), count: dim)
         
-        for word in wordsList {
+        for word in self.wordsList {
             wordPosition[word] = (NONE_POS, NONE_DIR)
         }
     }
@@ -50,6 +52,9 @@ class WordBoard {
     }
     
     func generateRandomBoard() -> Bool {
+        // Resets the board
+        self.wordGrid = [[Character]](repeating: [Character](repeating: "_", count: dim), count: dim)
+        
         var wordIndex = 0
         while wordIndex < wordsList.count {
             print("iteration \(wordIndex)")
@@ -67,27 +72,34 @@ class WordBoard {
             
             if prevPosition != NONE_POS && prevDir != NONE_DIR {
                 for (i,_) in currWord.enumerated() {
-                    self.wordGrid[i*prevDir.0 + prevPosition.0][i*prevDir.1 + prevPosition.1] = "_"
+                    let x = i*prevDir.0 + prevPosition.0
+                    let y = i*prevDir.1 + prevPosition.1
+                    self.wordPosCount[x][y]-=1
+                    if self.wordPosCount[x][y] == 0 {
+                        self.wordGrid[x][y] = "_"
+                    }
                 }
-                print(self.wordPosition[currWord])
-                print(self.wordGrid)
+//                print(self.wordPosition[currWord])
+//                print(self.wordGrid)
                 self.wordPosition[currWord] = (NONE_POS, NONE_DIR)
             }
             
-            // TODO: Store the open indexes
-            let listOfChoices: [Int] = (0..<dim).filter{ $0 - currWord.count > 0 || $0 + currWord.count <= dim }
-            let randomPos1 = (listOfChoices.randomElement()!, (0..<dim).randomElement()!)
-            let randomPos2 = ((0..<dim).randomElement()!, listOfChoices.randomElement()!)
-            let randomPos = [randomPos1, randomPos2].randomElement()!
-            print("\(currWord) : \(randomPos)")
+            var listOfChoices: [Int] = (0..<dim).filter{ $0 - currWord.count > 0 || $0 + currWord.count <= dim }
 
-            
+            let randomNum = listOfChoices.randomElement()!
+            let randomPos1 = (randomNum, (0..<dim).randomElement()!)
+            let randomPos2 = ((0..<dim).randomElement()!, randomNum)
+            let randomPos = [randomPos1, randomPos2].randomElement()!
+                
             DIRECTIONS_LIST.shuffle()
             for dir in DIRECTIONS_LIST {
-                // Check that the word can go this direction.
+                    // Check that the word can go this direction.
                 if self.posWithinBounds(randomPos, dir, currWord: currWord) {
                     for (i, c) in currWord.enumerated() {
-                        self.wordGrid[i*dir.0 + randomPos.0][i*dir.1 + randomPos.1] = c
+                        let x = i*dir.0 + randomPos.0
+                        let y = i*dir.1 + randomPos.1
+                        self.wordGrid[x][y] = c
+                        self.wordPosCount[x][y]+=1
                         // TODO: Logic to indicate that the word has been visited
                     }
                     self.wordPosition[currWord] = (randomPos, dir)
@@ -95,13 +107,14 @@ class WordBoard {
                     break
                 }
             }
-
+    
             // Reaching this point indicates that none of the directions work
             if self.positionOf(word: currWord).0 == NONE_POS {
                 wordIndex-=1
             }
         }
-        print(self.wordGrid)
+        print(self.wordPosition)
+//        print(self.wordGrid)
         return true
     }
     
