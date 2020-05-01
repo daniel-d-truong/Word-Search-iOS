@@ -9,19 +9,9 @@
 import Foundation
 
 let maxWords = 10
-/// Represents steps to take in both directions
-struct WordDirections {
-    static let RIGHT = (1, 0)
-    static let LEFT = (-1, 0)
-    static let UP = (0, 1)
-    static let DOWN = (0, -1)
-    static let UP_RIGHT = (1, 1)
-    static let UP_LEFT = (-1, 1)
-    static let DOWN_RIGHT = (1, -1)
-    static let DOWN_LEFT = (-1, -1)
-}
 
-func getRandomWords(_ numWordsLeft:Int,  dim: Int, semaphore: DispatchSemaphore,appendRandomWord: @escaping (String) -> Int) {
+/// Recursive method that keeps getting words from the API until we get all appropriate words in the array (length must be less than dimension).
+func getRandomWords(_ numWordsLeft:Int, dim: Int, semaphore: DispatchSemaphore, appendRandomWord: @escaping (String) -> Int) {
     if numWordsLeft == 0 {
         semaphore.signal()
         return
@@ -71,7 +61,7 @@ func getRandomWords(_ numWordsLeft:Int,  dim: Int, semaphore: DispatchSemaphore,
     task.resume()
 }
 
-func generateWordSearch(wordsList: [String] = [], dim: Int = 10) -> [[String]] {
+func generateWordSearch(wordsList: [String] = [], dim: Int = 10) -> WordBoard {
     // Dealing with async await
     let semaphore = DispatchSemaphore(value: 0)
     let queue = DispatchQueue.global()
@@ -91,9 +81,10 @@ func generateWordSearch(wordsList: [String] = [], dim: Int = 10) -> [[String]] {
         getRandomWords(maxWords-wordsList.count, dim: dim, semaphore: semaphore, appendRandomWord: appendRandomWord)
     }
     semaphore.wait()
-    
-    print(randomWords)
-    
+        
     // TODO: Word search generator logic.
-    return wordGrid
+    let board = WordBoard(dim: dim, wordsList: randomWords)
+    while !board.generateRandomBoard() {
+    }
+    return board
 }

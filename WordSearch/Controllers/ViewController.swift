@@ -15,9 +15,9 @@ class ViewController: UIViewController {
     
     /// Label to display number of words found
     @IBOutlet weak var wordsScore: UILabel!
-    var wordGrid: [[String]] = []
     let dim = 10
     let defaultList = ["Swift", "Kotlin", "ObjectiveC", "Variable", "Java", "Mobile"]
+    var wordBoard: WordBoard!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         self.wordSearchView.isScrollEnabled = false
         
-        self.wordGrid = generateWordSearch(wordsList: defaultList)
+        self.wordBoard = generateWordSearch(wordsList: defaultList)
     }
 
     
@@ -44,7 +44,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = wordSearchView.dequeueReusableCell(withReuseIdentifier: WordCollectionViewCell.reuseIdentifier, for: indexPath) as! WordCollectionViewCell
-        cell.letterLabel.text = self.wordGrid[indexPath.row/dim][indexPath.row%dim]
+        cell.letterLabel.text = String(self.wordBoard.wordGrid[indexPath.row/dim][indexPath.row%dim])
         return cell
     }
 }

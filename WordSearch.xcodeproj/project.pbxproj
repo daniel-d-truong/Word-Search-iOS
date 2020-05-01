@@ -17,6 +17,7 @@
 		CBA46C00245A8BF500864632 /* WordSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA46BFF245A8BF500864632 /* WordSearchUITests.swift */; };
 		CBA46C0E245A913100864632 /* WordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA46C0D245A913100864632 /* WordCollectionViewCell.swift */; };
 		CBA46C12245A938D00864632 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA46C11245A938D00864632 /* Utils.swift */; };
+		CBA46C17245AD21E00864632 /* WordBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA46C16245AD21E00864632 /* WordBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CBA46C01245A8BF500864632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBA46C0D245A913100864632 /* WordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBA46C11245A938D00864632 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CBA46C16245AD21E00864632 /* WordBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		CBA46BDC245A8BF300864632 /* WordSearch */ = {
 			isa = PBXGroup;
 			children = (
+				CBA46C15245AD20300864632 /* Models */,
 				CBA46C0F245A935C00864632 /* Controllers */,
 				CBA46BDD245A8BF300864632 /* AppDelegate.swift */,
 				CBA46BDF245A8BF300864632 /* SceneDelegate.swift */,
@@ -140,6 +143,14 @@
 				CBA46C0D245A913100864632 /* WordCollectionViewCell.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CBA46C15245AD20300864632 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBA46C16245AD21E00864632 /* WordBoard.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA46C17245AD21E00864632 /* WordBoard.swift in Sources */,
 				CBA46C12245A938D00864632 /* Utils.swift in Sources */,
 				CBA46BE2245A8BF300864632 /* ViewController.swift in Sources */,
 				CBA46BDE245A8BF300864632 /* AppDelegate.swift in Sources */,
