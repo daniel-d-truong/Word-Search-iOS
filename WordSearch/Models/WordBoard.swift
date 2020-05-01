@@ -51,7 +51,7 @@ class WordBoard {
         return self.wordPosition[word] ?? ((-1, -1), (-1, -1))
     }
     
-    func generateRandomBoard() -> Bool {
+    func generateWordSearch() -> Bool {
         // Resets the board
         self.wordGrid = [[Character]](repeating: [Character](repeating: "_", count: dim), count: dim)
         
@@ -84,7 +84,7 @@ class WordBoard {
                 self.wordPosition[currWord] = (NONE_POS, NONE_DIR)
             }
             
-            var listOfChoices: [Int] = (0..<dim).filter{ $0 - currWord.count > 0 || $0 + currWord.count <= dim }
+            let listOfChoices: [Int] = (0..<dim).filter{ $0 - currWord.count > 0 || $0 + currWord.count <= dim }
 
             let randomNum = listOfChoices.randomElement()!
             let randomPos1 = (randomNum, (0..<dim).randomElement()!)
@@ -116,6 +116,21 @@ class WordBoard {
         print(self.wordPosition)
 //        print(self.wordGrid)
         return true
+    }
+    
+    func fillBoard() {
+        let alphabet = "abcdefghijklmnopqrstuvwxyz"
+        for (i, row) in self.wordGrid.enumerated() {
+            for (j, char) in row.enumerated() {
+                self.wordGrid[i][j] = char == "_" ? alphabet.randomElement()! : char
+            }
+        }
+    }
+    
+    func generateRandomBoard() -> Bool {
+        let result = generateWordSearch()
+        fillBoard()
+        return result
     }
     
     func posWithinBounds(_ pos: POSITION, _ dir: DIRECTION, currWord: String) -> Bool {

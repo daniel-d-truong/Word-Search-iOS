@@ -32,8 +32,13 @@ class ViewController: UIViewController {
 
     
     @IBAction func tapMakeBoardButton(_ sender: Any) {
+        self.reloadWordSearch()
     }
     
+    func reloadWordSearch() {
+        self.wordBoard = generateWordSearch(wordsList: defaultList, dim: dim)
+        self.wordSearchView.reloadData()
+    }
 }
 
 // Collection View Protocols
