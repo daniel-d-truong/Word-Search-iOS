@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     /// Label to display number of words found
     @IBOutlet weak var wordsScore: UILabel!
+    
     let dim = 10
     let defaultList = ["Swift", "Kotlin", "ObjectiveC", "Variable", "Java", "Mobile"]
     var wordBoard: WordBoard!
@@ -25,6 +26,12 @@ class ViewController: UIViewController {
     var possibleCellsToExplore: [POSITION] = []
     var wordString: String = ""
     var visitedIndexPath: [IndexPath] = []
+    
+    // Word Search Positions
+    var initialPosition: IndexPath!
+    var cellsList: [WordCollectionViewCell] = []
+    var previousCell: IndexPath!
+    var currentDirection: DIRECTION!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,10 +105,18 @@ extension ViewController: UIGestureRecognizerDelegate {
             implementDragging(with: panGestureRecognizer)
             break
         case .ended:
+            // Reset all the used fields
             self.visitedIndexPath = []
             if self.wordBoard.wordsList.contains(self.wordString) {
                 self.incrementScore()
             }
+            
+            self.renderAllCellsBlue()
+            self.cellsList = []
+            
+            self.initialPosition = nil
+            self.previousCell = nil
+            self.currentDirection = nil
             break
         default:
             break
@@ -113,11 +128,62 @@ extension ViewController: UIGestureRecognizerDelegate {
         
         // TODO: Deal with handle erroring later
         let indexPath = self.wordSearchView.indexPathForItem(at: location)!
-        if !self.visitedIndexPath.contains(indexPath) {
+        
+        if !self.visitedIndexPath.contains(indexPath) && self.sameDirection(indexPath) {
             self.visitedIndexPath.append(indexPath)
+            
+            // Cell Information
             let cell = self.wordSearchView.cellForItem(at: indexPath) as! WordCollectionViewCell
             self.wordString += cell.letterLabel.text!
-            print(wordString)
+            
+            if self.cellsList.contains(cell) {
+                cell.backgroundColor = .blue
+                self.cellsList.removeAll(where: { $0 == cell })
+            } else {
+                cell.backgroundColor = .red
+                self.cellsList.append(cell)
+            }
+            self.previousCell = indexPath
         }
+    }
+    
+    func renderAllCellsBlue() {
+        for cell in self.cellsList {
+            cell.backgroundColor = .blue
+        }
+    }
+    
+    func sameDirection(_ indexPath: IndexPath) -> Bool {
+        guard let initialPath = self.initialPosition else {
+            self.initialPosition = indexPath
+            return true
+        }
+        
+        if self.currentDirection == nil {
+            calculateDirection(indexPath)
+        }
+        
+        let coordsCurrent = (indexPath.row/dim, indexPath.row%dim)
+        let coordsInitial = (self.initialPosition.row/dim, self.initialPosition.row%dim)
+        let coordsPrev = (self.previousCell!.row/dim, self.previousCell!.row%dim)
+            
+        if (self.currentDirection.0 + coordsPrev.0, self.currentDirection.1 + coordsPrev.1) == coordsCurrent {
+            return true
+        }
+        
+        if (coordsCurrent == coordsInitial) {
+            self.currentDirection = nil
+            return true
+        }
+        
+        return false
+    }
+    
+    func calculateDirection(_ indexPath: IndexPath) {
+        let coordsInitial = (self.initialPosition.row/dim, self.initialPosition.row%dim)
+        let coordsCurrent = (indexPath.row/dim, indexPath.row%dim)
+        
+        let slope = (coordsCurrent.0 - coordsInitial.0, coordsCurrent.1 - coordsInitial.1)
+        self.currentDirection = slope
     }
 }
