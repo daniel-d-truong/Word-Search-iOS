@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		183BDD940A96293D851C956A /* Pods_WordSearch_WordSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422A9D4E5C9DFE85CE844FC7 /* Pods_WordSearch_WordSearchUITests.framework */; };
 		73766B1D1A50F572D2525AF3 /* Pods_WordSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D827D91B49697D3B2B9295C /* Pods_WordSearchTests.framework */; };
 		7EC2269F54FC5707FF198341 /* Pods_WordSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90EA2B51A1566C53DFAFC6A /* Pods_WordSearch.framework */; };
+		CB69BF97246A5E5B0014BC93 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69BF96246A5E5B0014BC93 /* Extension.swift */; };
 		CBA46BDE245A8BF300864632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA46BDD245A8BF300864632 /* AppDelegate.swift */; };
 		CBA46BE0245A8BF300864632 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA46BDF245A8BF300864632 /* SceneDelegate.swift */; };
 		CBA46BE2245A8BF300864632 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA46BE1245A8BF300864632 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		A459CAA42E2CF5A8A951C27E /* Pods-WordSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordSearch.release.xcconfig"; path = "Target Support Files/Pods-WordSearch/Pods-WordSearch.release.xcconfig"; sourceTree = "<group>"; };
 		A90EA2B51A1566C53DFAFC6A /* Pods_WordSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9AE34818F91D5374235C5E0 /* Pods-WordSearch-WordSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordSearch-WordSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-WordSearch-WordSearchUITests/Pods-WordSearch-WordSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB69BF96246A5E5B0014BC93 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CBA46BDA245A8BF300864632 /* WordSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA46BDD245A8BF300864632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBA46BDF245A8BF300864632 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +119,6 @@
 				30E682E53DC3304AD4B6FD12 /* Pods-WordSearchTests.debug.xcconfig */,
 				FC17F07FC28E98B869E56101 /* Pods-WordSearchTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,6 +156,7 @@
 				CBA46BE8245A8BF500864632 /* LaunchScreen.storyboard */,
 				CBA46BEB245A8BF500864632 /* Info.plist */,
 				CBA46C11245A938D00864632 /* Utils.swift */,
+				CB69BF96246A5E5B0014BC93 /* Extension.swift */,
 			);
 			path = WordSearch;
 			sourceTree = "<group>";
@@ -435,6 +437,7 @@
 			files = (
 				CBA46C17245AD21E00864632 /* WordBoard.swift in Sources */,
 				CBA46C12245A938D00864632 /* Utils.swift in Sources */,
+				CB69BF97246A5E5B0014BC93 /* Extension.swift in Sources */,
 				CBA46BE2245A8BF300864632 /* ViewController.swift in Sources */,
 				CBA46BDE245A8BF300864632 /* AppDelegate.swift in Sources */,
 				CBA46C0E245A913100864632 /* WordCollectionViewCell.swift in Sources */,

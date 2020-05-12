@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     var wordString: String = ""
     var visitedIndexPath: [IndexPath] = []
     var wordMap: [String: TagView]!
+    var wordColors: [String: UIColor]!
     
     // Word Search Positions
     var initialPosition: IndexPath!
@@ -57,6 +58,8 @@ class ViewController: UIViewController {
         self.wordBoard = generateWordSearch(wordsList: defaultList, dim: dim)
         self.wordsView.removeAllTags()
         self.wordMap = [:]
+        self.wordColors = [:]
+        
         for i in 0..<10 {
             let word = self.wordBoard.wordsList[i]
             self.wordMap[word] = self.wordsView.addTag(word)
@@ -80,6 +83,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = wordSearchView.dequeueReusableCell(withReuseIdentifier: WordCollectionViewCell.reuseIdentifier, for: indexPath) as! WordCollectionViewCell
         cell.letterLabel.text = String(self.wordBoard.wordGrid[indexPath.row/dim][indexPath.row%dim])
+        cell.setColor(color: .blue)
         return cell
     }
 }
@@ -120,10 +124,14 @@ extension ViewController: UIGestureRecognizerDelegate {
             if self.wordBoard.wordsList.contains(self.wordString) && !self.wordBoard.wordsFound.contains(self.wordString) {
                 self.incrementScore()
                 self.wordBoard.wordsFound.append(self.wordString)
-                self.resetAllCellsColor(color: .green)
-                self.wordMap[self.wordString]?.backgroundColor = .green
+                
+                self.wordColors[self.wordString] = UIColor.random()
+    
+                
+                self.resetAllCellsColor(color: self.wordColors[self.wordString]!)
+                self.wordMap[self.wordString]?.backgroundColor = self.wordColors[self.wordString]
             } else if self.wordBoard.wordsFound.contains(self.wordString) {
-                self.resetAllCellsColor(color: .green)
+                self.resetAllCellsColor(color: self.wordColors[self.wordString]!)
             } else {
                 self.resetAllCellsColor()
             }
