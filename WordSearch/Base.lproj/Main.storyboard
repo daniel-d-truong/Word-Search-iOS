@@ -64,13 +64,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a90-N0-NFI">
-                                <rect key="frame" x="136" y="790" width="143" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a90-N0-NFI">
+                                <rect key="frame" x="135.5" y="832" width="143" height="30"/>
                                 <state key="normal" title="Generate New Board"/>
                                 <connections>
                                     <action selector="tapMakeBoardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qx4-EX-zVX"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHF-Xt-cnt" customClass="TagListView" customModule="TagListView">
+                                <rect key="frame" x="0.0" y="752" width="414" height="81"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0r-eN-2uF">
+                                <rect key="frame" x="153" y="717" width="109" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -78,13 +88,20 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xuw-x4-VcH" secondAttribute="trailing" constant="198" id="41C-aC-fKx"/>
                             <constraint firstItem="AfW-1M-ufT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="BI3-Sa-QMZ"/>
                             <constraint firstItem="Xuw-x4-VcH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="199" id="D8J-2I-gdP"/>
+                            <constraint firstItem="B0r-eN-2uF" firstAttribute="top" secondItem="dUD-KX-crs" secondAttribute="bottom" constant="14" id="IZM-19-jGo"/>
                             <constraint firstItem="dUD-KX-crs" firstAttribute="top" secondItem="Xuw-x4-VcH" secondAttribute="bottom" constant="27" id="KwZ-jP-g5b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B0r-eN-2uF" secondAttribute="trailing" constant="152" id="MAb-hs-1cp"/>
                             <constraint firstItem="dUD-KX-crs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ml0-Co-JfA"/>
                             <constraint firstItem="dUD-KX-crs" firstAttribute="centerX" secondItem="a90-N0-NFI" secondAttribute="centerX" id="RcJ-UI-wjy"/>
                             <constraint firstItem="Xuw-x4-VcH" firstAttribute="top" secondItem="AfW-1M-ufT" secondAttribute="bottom" constant="17" id="ahA-m3-6kj"/>
-                            <constraint firstItem="a90-N0-NFI" firstAttribute="top" secondItem="dUD-KX-crs" secondAttribute="bottom" constant="89" id="e9C-rV-9L5"/>
+                            <constraint firstItem="DHF-Xt-cnt" firstAttribute="top" secondItem="dUD-KX-crs" secondAttribute="bottom" constant="49" id="arX-Ng-AvR"/>
+                            <constraint firstItem="B0r-eN-2uF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="bcA-tS-aEl"/>
+                            <constraint firstItem="a90-N0-NFI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dCd-iF-WPP"/>
                             <constraint firstItem="AfW-1M-ufT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="eRP-hs-JqU"/>
                             <constraint firstItem="dUD-KX-crs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fcC-jO-Mw0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DHF-Xt-cnt" secondAttribute="bottom" constant="29" id="j3M-MG-jeP"/>
+                            <constraint firstItem="DHF-Xt-cnt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jLb-Db-BZi"/>
+                            <constraint firstItem="DHF-Xt-cnt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pHF-aW-uon"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AfW-1M-ufT" secondAttribute="trailing" constant="153" id="ygy-vd-mBI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -92,6 +109,7 @@
                     <connections>
                         <outlet property="wordSearchView" destination="dUD-KX-crs" id="Ezx-AK-TWW"/>
                         <outlet property="wordsScore" destination="Xuw-x4-VcH" id="CCZ-NF-psM"/>
+                        <outlet property="wordsView" destination="DHF-Xt-cnt" id="FFt-q3-6np"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

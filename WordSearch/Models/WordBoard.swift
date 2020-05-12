@@ -35,12 +35,16 @@ class WordBoard {
     var wordPosition: [String: (POSITION, DIRECTION)]
     var wordPosCount: [[Int]]
     
+    var wordsFound: [String]
+    
     init(dim: Int, wordsList: [String]) {
         self.wordsList = wordsList.map({ $0.lowercased() })
         self.wordGrid = [[Character]](repeating: [Character](repeating: "_", count: dim), count: dim)
         self.dim = dim
         self.wordPosition = [:]
+        self.wordsFound = []
         self.wordPosCount = [[Int]](repeating: [Int](repeating: 0, count: dim), count: dim)
+        
         
         for word in self.wordsList {
             wordPosition[word] = (NONE_POS, NONE_DIR)

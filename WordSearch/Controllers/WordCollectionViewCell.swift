@@ -10,5 +10,11 @@ import UIKit
 
 class WordCollectionViewCell: UICollectionViewCell {
     static let reuseIdentifier = "WordCell"
+    var color: UIColor = .blue
     @IBOutlet weak var letterLabel: UILabel!
+    
+    func setColor(color: UIColor) {
+        self.color = color
+        self.backgroundColor = color
+    }
 }

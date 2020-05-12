@@ -7,25 +7,28 @@
 //
 
 import UIKit
+import TagListView
 
 class ViewController: UIViewController {
 
-    /// Collection View representing the Word Search Board
+    // Collection View representing the Word Search Board
     @IBOutlet weak var wordSearchView: UICollectionView!
     
-    /// Label to display number of words found
+    // Label to display number of words found
     @IBOutlet weak var wordsScore: UILabel!
     
     let dim = 10
     let defaultList = ["Swift", "Kotlin", "ObjectiveC", "Variable", "Java", "Mobile"]
     var wordBoard: WordBoard!
     var score = 0
-
+    @IBOutlet weak var wordsView: TagListView!
+    
     // Pan Gesture Variables
     var firstIndexPath: IndexPath? = IndexPath()
     var possibleCellsToExplore: [POSITION] = []
     var wordString: String = ""
     var visitedIndexPath: [IndexPath] = []
+    var wordMap: [String: TagView]!
     
     // Word Search Positions
     var initialPosition: IndexPath!
@@ -41,7 +44,8 @@ class ViewController: UIViewController {
         wordSearchView.delegate = self
         wordSearchView.dataSource = self
         
-        self.wordBoard = generateWordSearch(wordsList: defaultList)
+        self.wordsView.alignment = .center
+        self.reloadWordSearch()
     }
 
     
@@ -51,6 +55,13 @@ class ViewController: UIViewController {
     
     func reloadWordSearch() {
         self.wordBoard = generateWordSearch(wordsList: defaultList, dim: dim)
+        self.wordsView.removeAllTags()
+        self.wordMap = [:]
+        for i in 0..<10 {
+            let word = self.wordBoard.wordsList[i]
+            self.wordMap[word] = self.wordsView.addTag(word)
+        }
+        
         self.wordSearchView.reloadData()
     }
     
@@ -80,7 +91,6 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension ViewController: UIGestureRecognizerDelegate {
-    
     func setupCollectionView() {
         wordSearchView.canCancelContentTouches = false
         wordSearchView.allowsMultipleSelection = true
@@ -107,11 +117,17 @@ extension ViewController: UIGestureRecognizerDelegate {
         case .ended:
             // Reset all the used fields
             self.visitedIndexPath = []
-            if self.wordBoard.wordsList.contains(self.wordString) {
+            if self.wordBoard.wordsList.contains(self.wordString) && !self.wordBoard.wordsFound.contains(self.wordString) {
                 self.incrementScore()
+                self.wordBoard.wordsFound.append(self.wordString)
+                self.resetAllCellsColor(color: .green)
+                self.wordMap[self.wordString]?.backgroundColor = .green
+            } else if self.wordBoard.wordsFound.contains(self.wordString) {
+                self.resetAllCellsColor(color: .green)
+            } else {
+                self.resetAllCellsColor()
             }
             
-            self.renderAllCellsBlue()
             self.cellsList = []
             
             self.initialPosition = nil
@@ -147,14 +163,17 @@ extension ViewController: UIGestureRecognizerDelegate {
         }
     }
     
-    func renderAllCellsBlue() {
+    func resetAllCellsColor(color: UIColor = .blue) {
         for cell in self.cellsList {
-            cell.backgroundColor = .blue
+            if color != .blue {
+                cell.setColor(color: color)
+            }
+            cell.backgroundColor = cell.color
         }
     }
     
     func sameDirection(_ indexPath: IndexPath) -> Bool {
-        guard let initialPath = self.initialPosition else {
+        guard let _ = self.initialPosition else {
             self.initialPosition = indexPath
             return true
         }
