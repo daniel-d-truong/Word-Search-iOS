@@ -8,6 +8,8 @@
 
 import UIKit
 import TagListView
+import LBConfettiView
+import PopupDialog
 
 class ViewController: UIViewController {
 
@@ -21,6 +23,7 @@ class ViewController: UIViewController {
     let defaultList = ["Swift", "Kotlin", "ObjectiveC", "Variable", "Java", "Mobile"]
     var wordBoard: WordBoard!
     var score = 0
+    var confettiView: ConfettiView!
     @IBOutlet weak var wordsView: TagListView!
     
     // Pan Gesture Variables
@@ -46,6 +49,10 @@ class ViewController: UIViewController {
         wordSearchView.dataSource = self
         
         self.wordsView.alignment = .center
+        
+        self.confettiView = ConfettiView(frame: self.view.bounds)
+        view.addSubview(confettiView)
+        
         self.reloadWordSearch()
     }
 
@@ -59,12 +66,14 @@ class ViewController: UIViewController {
         self.wordsView.removeAllTags()
         self.wordMap = [:]
         self.wordColors = [:]
+        self.wordsScore.text = "0"
         
         for i in 0..<10 {
             let word = self.wordBoard.wordsList[i]
             self.wordMap[word] = self.wordsView.addTag(word)
         }
         
+        self.confettiView.stop()
         self.wordSearchView.reloadData()
     }
     
@@ -141,6 +150,17 @@ extension ViewController: UIGestureRecognizerDelegate {
             self.initialPosition = nil
             self.previousCell = nil
             self.currentDirection = nil
+            
+            // Check if all words are found
+            if self.wordBoard.wordsFound.count == 1 {
+                self.confettiView.start()
+                let popup = PopupDialog(title: "Congrats!", message: "You have solved this word search!")
+                let generateBoardButton = DefaultButton(title: "Generate New Word Search", action: {
+                    self.reloadWordSearch()
+                })
+                popup.addButton(generateBoardButton)
+                self.present(popup, animated: true, completion: nil)
+            }
             break
         default:
             break
@@ -151,13 +171,13 @@ extension ViewController: UIGestureRecognizerDelegate {
         let location = panGestureRecognizer.location(in: self.wordSearchView)
         
         // TODO: Deal with handle erroring later
-        let indexPath = self.wordSearchView.indexPathForItem(at: location)!
+        let indexPath = self.wordSearchView.indexPathForItem(at: location) ?? nil
         
-        if !self.visitedIndexPath.contains(indexPath) && self.sameDirection(indexPath) {
-            self.visitedIndexPath.append(indexPath)
+        if indexPath != nil && !self.visitedIndexPath.contains(indexPath!) && self.sameDirection(indexPath!) {
+            self.visitedIndexPath.append(indexPath!)
             
             // Cell Information
-            let cell = self.wordSearchView.cellForItem(at: indexPath) as! WordCollectionViewCell
+            let cell = self.wordSearchView.cellForItem(at: indexPath!) as! WordCollectionViewCell
             self.wordString += cell.letterLabel.text!
             
             if self.cellsList.contains(cell) {

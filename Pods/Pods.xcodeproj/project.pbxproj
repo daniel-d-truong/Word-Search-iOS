@@ -3,34 +3,124 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19827E1F0EDB8D15C4E4A0F47F579D59 /* Pods-WordSearch-WordSearchUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C18609F4918ADB9D21E6D0115F6B75D0 /* Pods-WordSearch-WordSearchUITests-dummy.m */; };
+		00620E71264E0E954D667CEAD6BD0E99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6249D0DEDE09097FCB7FFE25FCBD3B7 /* UIKit.framework */; };
+		019475E72F433C3E51895A3CD999822F /* CaptureQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9071E08774372FBE24A840A5C0CE24EF /* CaptureQuality.swift */; };
+		030FCBCF4FD8CD3905C39EDA654D29BD /* PopupDialogDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7F4CA3B8A004CCBB470EFAFC839DE /* PopupDialogDefaultViewController.swift */; };
+		03F0F20C029BAF05CA12A64947C44160 /* Pods-WordSearch-WordSearchUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C18609F4918ADB9D21E6D0115F6B75D0 /* Pods-WordSearch-WordSearchUITests-dummy.m */; };
+		0F82656B116745EE31DB985B8096CD60 /* UIImageView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4322B43D2460027CD1D72D3B05CE8E /* UIImageView+Calculations.swift */; };
+		169D250E01A497F88370028FD950A37C /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5494DB055ECA14A5CF083FC4FE90A771 /* TransitionAnimator.swift */; };
+		18643D4F9BC327B1E5B9175F4260AC0E /* DynamicBlurView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FC872B0646B65A9186A2C73D640186 /* DynamicBlurView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19C4DC14CC713DC68F954B6CC2F38DE7 /* DynamicBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7FBD8A6F1D169B86F6CFE9280F31F4 /* DynamicBlurView.swift */; };
+		1CEEB9D3EA2AD1A94E1F3022E1675CF6 /* LBConfettiView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DA7414270D3B25B1ECEE07E4F311B4F /* LBConfettiView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		225555187BFD67F7F6DADEA6C73C567F /* PopupDialogContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FBEC241DA2A77424955629C9734A7B /* PopupDialogContainerView.swift */; };
+		258EADD7FC682260189BB3AE6E548C2B /* Confetti.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC990E694E588EEE96EE3E56B2EE59D8 /* Confetti.xcassets */; };
 		2D9FCA57CE568639FDB8CC910FA9676A /* Pods-WordSearchTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 687E204070C30D626E2227F79EECFF53 /* Pods-WordSearchTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		433C6AFA3D6810D14147229444003F87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		638FA270537DE39316B9E8974E5A13E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		66566ED7A33B95CF805A9CA0C941CE05 /* Pods-WordSearch-WordSearchUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F302801C27BEF34926372782B677D07D /* Pods-WordSearch-WordSearchUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		947658A051B4ABC599137D9035006A69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A50C4C8509B899F2912085C1B673C370 /* Pods-WordSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6966D14660B9A980F51FAB8899DCCC1F /* Pods-WordSearch-dummy.m */; };
-		A6EC3DF1E275D0757F3C498DA60FA33B /* TagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E918B828530C7A942BA850CD7A76873A /* TagListView-dummy.m */; };
-		C18569174D872E823B5D9F356CBBBE1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		303898D9A1F232CB589A514C4EFFD644 /* CGContext+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EA67052BA415B682D022A77B4C6656 /* CGContext+CGImage.swift */; };
+		37AFD441D3948E62ABBFFBDC662F6DB6 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6CC807E060BD97B158A816B089628 /* UIView+Animations.swift */; };
+		37B464DA33104653FA64ACDD691F8A5F /* DynamicBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 647686664206297563FA7467771441EB /* DynamicBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DCA006492A47773ECE73B1B7058067D /* Pods-WordSearch-WordSearchUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F302801C27BEF34926372782B677D07D /* Pods-WordSearch-WordSearchUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		433C6AFA3D6810D14147229444003F87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C277DDAFE68A195EDF8E21573219773 /* Foundation.framework */; };
+		437A215C6D99A48594138CD53B6C8A36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C277DDAFE68A195EDF8E21573219773 /* Foundation.framework */; };
+		4C6E460A6B911AFFD987F78AC59B7466 /* DynamicBlurView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48605496EA7A8E9439C53C0835B30AC5 /* DynamicBlurView.framework */; };
+		535CD4014DCA990CEE8A4783486170FB /* TrackingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47ED98AAA98FB4721DF5E4ECF8AF4AF /* TrackingMode.swift */; };
+		5546955AFBE8D354D17380A294A25CE6 /* PopupDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF8C6DC8DB10FE8A59BBCFDEFF7AE4 /* PopupDialog.swift */; };
+		5999E251F473AFBC8E59186A8CABE1B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C277DDAFE68A195EDF8E21573219773 /* Foundation.framework */; };
+		5A3C43223F9D2CC4868BAA87CA795CAB /* ConfettiScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B61A5A797EFCA0AD339EBA6949BC7F6 /* ConfettiScale.swift */; };
+		64036806DEB2ED171FD515DF96525F8F /* LBConfettiView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AEECBCBA5D4520FC7BD8049D5DFE90 /* LBConfettiView-dummy.m */; };
+		73D0683E05F3565AE7175088B7CE6DC0 /* PopupDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C238BA7DBF8202B588780B488B69265 /* PopupDialog-dummy.m */; };
+		7A009CFEBD7D09FB5DA532F54EB9FBEF /* TransitionAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEC1823B9B2E729B71F0ACCD1C95044 /* TransitionAnimations.swift */; };
+		7EBE128BBA4CC34DBF4853B1E747C724 /* DynamicBlurView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB231F4422B3BEB7A3B42FAC8B377DC /* DynamicBlurView-dummy.m */; };
+		7FF0649D3237A34599DA73541656009B /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD23B2629EC41FAFF718708E582D5E6 /* UIImage+Blur.swift */; };
+		83B9E5412A63412A151E0092BF6AF7CA /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A84793B6EB4D4D4573349EC09891E /* PresentationManager.swift */; };
+		84D9794DEFBA9D7289AED9466833DCC9 /* Pods-WordSearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA9C2D291A93E106156A36E19C1B9D2 /* Pods-WordSearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928FFA6E7256231E743768EBC78E36A7 /* PopupDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CC6409E3F8BE1FBBA3A0C987F3C932 /* PopupDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		947658A051B4ABC599137D9035006A69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C277DDAFE68A195EDF8E21573219773 /* Foundation.framework */; };
+		9B45F788C4CE05D2DC0686432FB0EE22 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698C7792749D8F8A29699C4E3B5CA919 /* Accelerate.framework */; };
+		9CB73C2028D1E16DFE87289362792A4F /* CGImage+Accelerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E1DEC358CE4CC7932C6EC4054470F /* CGImage+Accelerate.swift */; };
+		A254857FE369E684CBE3B4F6F292239D /* PopupDialogDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A65A417CA97D3CC6F1F14CEC7AF9EF /* PopupDialogDefaultButtons.swift */; };
+		A6EC3DF1E275D0757F3C498DA60FA33B /* TagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2109C5D0569A8687D8A29C506469B2B /* TagListView-dummy.m */; };
+		A94100505467526DB734FAB115BF715C /* PopupDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279E6ED93A9EEE3A18931B8FBECEB8E /* PopupDialogOverlayView.swift */; };
+		B18FE5EE478D75593AE4D0C6B1E6506F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C277DDAFE68A195EDF8E21573219773 /* Foundation.framework */; };
+		B2F489FB022F836FB35B3FEABF68903C /* PopupDialog+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE246E4EB38D25DFACF51CB6700C284 /* PopupDialog+Keyboard.swift */; };
+		C60BE1FA828EA5AB3878B9908E2ACFDE /* BlurLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7148F88978DE02787DB850E5C3904C3 /* BlurLayer.swift */; };
 		C95CFC6AF8BB87A2CC1E8E7B659804DC /* Pods-WordSearchTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8843410E9A6C50A1D7A6ED50D8F331 /* Pods-WordSearchTests-dummy.m */; };
-		D873E920F6CAC3D63428190C85520012 /* TagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 909F30854DC02CAF5678730D80345742 /* TagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8857C7EFEC671C6D23BACB10087FA7A /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92494CBEA8BE8BD6F3BA7E782893B7E6 /* TagView.swift */; };
-		E6BBD02DE6D603EA8028A046B28896A4 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAFD4576990B0B449028B7BDD237FF5 /* TagListView.swift */; };
-		F5845395625813602747927F3691AC52 /* Pods-WordSearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA9C2D291A93E106156A36E19C1B9D2 /* Pods-WordSearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9EAAF9FBB7DB084E9A21122C3E62125 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4E907009AE999DCE62F6B347A27EC9 /* CloseButton.swift */; };
+		C9D87D93855954B4B23CDB647DEB7D0E /* PopupDialogDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516A38352D254E856CCFD252D398C77 /* PopupDialogDefaultView.swift */; };
+		D2EDE5A7A2ADFAD6A233AA470332B3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C277DDAFE68A195EDF8E21573219773 /* Foundation.framework */; };
+		D6A99CA2C65FD78FEAC4F8A3705182C0 /* Pods-WordSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6966D14660B9A980F51FAB8899DCCC1F /* Pods-WordSearch-dummy.m */; };
+		D82DC5AAA5AA0E1A33EFE457C493D755 /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89998B2BB180CCBD2BB9C1F2AB85092 /* UIViewController+Visibility.swift */; };
+		D873E920F6CAC3D63428190C85520012 /* TagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC0E6BD7CD317EF5D70F167E66AAF6FA /* TagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8857C7EFEC671C6D23BACB10087FA7A /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E92F690E8F8E714A05C87B7628C7CFD /* TagView.swift */; };
+		D9F9E9336475EE7188F8F29DDE0A2EB1 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE950DF6184F2A6146E68C3CCA67E63B /* PresentationController.swift */; };
+		DCEE2E72739ADFB7890C33BC35099C01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C277DDAFE68A195EDF8E21573219773 /* Foundation.framework */; };
+		DD02060CEA017F21A85B2FCCDE5D85BA /* LBConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED10D17071A4224EFDF64B756ECE7AD1 /* LBConfettiView.swift */; };
+		E6BBD02DE6D603EA8028A046B28896A4 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E523F4D09CFD3EE15B3B3F2C4284A /* TagListView.swift */; };
+		E7D52E6BAC48EA0D927F16D671ADBD77 /* LBConfettiView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 136DA5904A077FE4B577AA26F6A40F53 /* LBConfettiView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC78D8A8141D8268D6382866CDF8F16A /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEF83EF64F9EC55B304B4A063001B0 /* InteractiveTransition.swift */; };
+		F82E29CC1BF7165FF77D9C4A387357A7 /* PopupDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154A7C7E94ABBC9CB6323BC2FBC2A25 /* PopupDialogButton.swift */; };
+		F9CBF267B7E13D2DDDF0DB1EB6DE9F9B /* ConfettiStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AC62795E3016CD5EBAB626095CBE2C /* ConfettiStyle.swift */; };
+		F9EAAF9FBB7DB084E9A21122C3E62125 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CFC9D84A8336CE48855B853E298BE /* CloseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7E53EC7B75F8F9B007F085C55196F8DD /* PBXContainerItemProxy */ = {
+		1E2E303EB6DD030421A83C5DC022BA5F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B43A58FC22C898DE29F6E12FE9636507;
 			remoteInfo = TagListView;
+		};
+		2763FCA98104FEE93EB4E54D32DDF454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D914FA2F03C860D5133BA2DB87C594A;
+			remoteInfo = DynamicBlurView;
+		};
+		4E66DAE67FBD197B9CB9678A2E20E2F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E71929B582F8CD57B3DC1FD6560F047;
+			remoteInfo = PopupDialog;
+		};
+		78A6CD59060948C49A41CBB251FC28BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B43A58FC22C898DE29F6E12FE9636507;
+			remoteInfo = TagListView;
+		};
+		92907265B149CE418A7413F0D79293C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E71929B582F8CD57B3DC1FD6560F047;
+			remoteInfo = PopupDialog;
+		};
+		99A7FDCCCC2B2EE47FBB6DB9C0A20D0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D914FA2F03C860D5133BA2DB87C594A;
+			remoteInfo = DynamicBlurView;
+		};
+		B531B4AC4AB0C2323F26B5705744E3C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82254F34E2F157255ED349715DAB908B;
+			remoteInfo = LBConfettiView;
+		};
+		CDD267BCF678EFDFD60ED08C897A2B36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82254F34E2F157255ED349715DAB908B;
+			remoteInfo = LBConfettiView;
 		};
 		DB80997AC4D51D9C24C0D49009EDB567 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -39,73 +129,143 @@
 			remoteGlobalIDString = C2222DA01F370B284CCDDF7F06FDB7BC;
 			remoteInfo = "Pods-WordSearch";
 		};
-		DFE2DF6D8F8B37AE7D37DB18A04F8BBF /* PBXContainerItemProxy */ = {
+		FE6B4C7FE04F9B6E0D0C44F43A081B32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B43A58FC22C898DE29F6E12FE9636507;
-			remoteInfo = TagListView;
+			remoteGlobalIDString = 7D914FA2F03C860D5133BA2DB87C594A;
+			remoteInfo = DynamicBlurView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		056C4675E47A62F4928ABF88E03C0576 /* TagListView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagListView-Info.plist"; sourceTree = "<group>"; };
+		01EEF83EF64F9EC55B304B4A063001B0 /* InteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveTransition.swift; path = PopupDialog/Classes/InteractiveTransition.swift; sourceTree = "<group>"; };
+		0C238BA7DBF8202B588780B488B69265 /* PopupDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupDialog-dummy.m"; sourceTree = "<group>"; };
 		0CF3EB40A666D5ECF433832C230E0815 /* Pods-WordSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		0DA9C2D291A93E106156A36E19C1B9D2 /* Pods-WordSearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WordSearch-umbrella.h"; sourceTree = "<group>"; };
+		0FB231F4422B3BEB7A3B42FAC8B377DC /* DynamicBlurView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicBlurView-dummy.m"; sourceTree = "<group>"; };
+		136DA5904A077FE4B577AA26F6A40F53 /* LBConfettiView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LBConfettiView-umbrella.h"; sourceTree = "<group>"; };
+		154C860ED5C9DB3580CC28B82E14AD9F /* DynamicBlurView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicBlurView-prefix.pch"; sourceTree = "<group>"; };
+		1B61A5A797EFCA0AD339EBA6949BC7F6 /* ConfettiScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfettiScale.swift; path = LBConfettiView/Sources/ConfettiScale.swift; sourceTree = "<group>"; };
 		1D124F6EFD3132E23B6C872CF86BF8FE /* Pods-WordSearch-WordSearchUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordSearch-WordSearchUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1EDF8C6DC8DB10FE8A59BBCFDEFF7AE4 /* PopupDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialog.swift; path = PopupDialog/Classes/PopupDialog.swift; sourceTree = "<group>"; };
+		21FC872B0646B65A9186A2C73D640186 /* DynamicBlurView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicBlurView-umbrella.h"; sourceTree = "<group>"; };
 		226659A0563B369D3819203242156A90 /* Pods_WordSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WordSearchTests.framework; path = "Pods-WordSearchTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2516A38352D254E856CCFD252D398C77 /* PopupDialogDefaultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultView.swift; path = PopupDialog/Classes/PopupDialogDefaultView.swift; sourceTree = "<group>"; };
 		2B8843410E9A6C50A1D7A6ED50D8F331 /* Pods-WordSearchTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WordSearchTests-dummy.m"; sourceTree = "<group>"; };
 		2D9CC95731A9AC5D37269A040490BD09 /* Pods-WordSearch-WordSearchUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WordSearch-WordSearchUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2F6E24DAA34C9EED0473BB66EBF73E3C /* TagListView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.xcconfig; sourceTree = "<group>"; };
+		2DA7414270D3B25B1ECEE07E4F311B4F /* LBConfettiView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LBConfettiView.h; path = LBConfettiView/Sources/LBConfettiView.h; sourceTree = "<group>"; };
+		2E6E1DEC358CE4CC7932C6EC4054470F /* CGImage+Accelerate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGImage+Accelerate.swift"; path = "Sources/DynamicBlurView/CGImage+Accelerate.swift"; sourceTree = "<group>"; };
 		3106317D67622DAEFF9E1ED303ABF791 /* Pods-WordSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordSearch.debug.xcconfig"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		34FB964502259D0FF233CE71CFDD2A71 /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopupDialog.framework; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE246E4EB38D25DFACF51CB6700C284 /* PopupDialog+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopupDialog+Keyboard.swift"; path = "PopupDialog/Classes/PopupDialog+Keyboard.swift"; sourceTree = "<group>"; };
+		3E92F690E8F8E714A05C87B7628C7CFD /* TagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = TagListView/TagView.swift; sourceTree = "<group>"; };
 		442A83D6BDE2A3E765C39CBD54C58188 /* Pods-WordSearchTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WordSearchTests.modulemap"; sourceTree = "<group>"; };
 		473FF050F8413850871B7876928A3C5C /* Pods-WordSearch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WordSearch-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4FAFD4576990B0B449028B7BDD237FF5 /* TagListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagListView.swift; path = TagListView/TagListView.swift; sourceTree = "<group>"; };
+		47FBEC241DA2A77424955629C9734A7B /* PopupDialogContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogContainerView.swift; path = PopupDialog/Classes/PopupDialogContainerView.swift; sourceTree = "<group>"; };
+		48605496EA7A8E9439C53C0835B30AC5 /* DynamicBlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicBlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49CC6409E3F8BE1FBBA3A0C987F3C932 /* PopupDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-umbrella.h"; sourceTree = "<group>"; };
+		4C277DDAFE68A195EDF8E21573219773 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4F183ADD525B0BE89AC0A111A187D65B /* TagListView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.xcconfig; sourceTree = "<group>"; };
+		4F7FBD8A6F1D169B86F6CFE9280F31F4 /* DynamicBlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicBlurView.swift; path = Sources/DynamicBlurView/DynamicBlurView.swift; sourceTree = "<group>"; };
+		5154A7C7E94ABBC9CB6323BC2FBC2A25 /* PopupDialogButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogButton.swift; path = PopupDialog/Classes/PopupDialogButton.swift; sourceTree = "<group>"; };
+		5170C8C794C19BC043E6CCD420EED926 /* PopupDialog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PopupDialog-Info.plist"; sourceTree = "<group>"; };
+		52D9BF151C4E5D47BD1BC5148B62D4A2 /* LBConfettiView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LBConfettiView.modulemap; sourceTree = "<group>"; };
+		5494DB055ECA14A5CF083FC4FE90A771 /* TransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimator.swift; path = PopupDialog/Classes/TransitionAnimator.swift; sourceTree = "<group>"; };
+		5BEC1823B9B2E729B71F0ACCD1C95044 /* TransitionAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimations.swift; path = PopupDialog/Classes/TransitionAnimations.swift; sourceTree = "<group>"; };
+		647686664206297563FA7467771441EB /* DynamicBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DynamicBlurView.h; path = Sources/DynamicBlurView/DynamicBlurView.h; sourceTree = "<group>"; };
+		66F3D534DAC00BC9F72A38C679D550B8 /* PopupDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-prefix.pch"; sourceTree = "<group>"; };
 		687E204070C30D626E2227F79EECFF53 /* Pods-WordSearchTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WordSearchTests-umbrella.h"; sourceTree = "<group>"; };
 		6966D14660B9A980F51FAB8899DCCC1F /* Pods-WordSearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WordSearch-dummy.m"; sourceTree = "<group>"; };
+		698C7792749D8F8A29699C4E3B5CA919 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		7131768103E0638E7E41E945CFC94F3F /* Pods-WordSearch-WordSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordSearch-WordSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		73740456D2B57549CAD06441372CD5F7 /* Pods-WordSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordSearch.release.xcconfig"; sourceTree = "<group>"; };
+		7466A8B52361D16A3D12C414819E25DE /* LBConfettiView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LBConfettiView-prefix.pch"; sourceTree = "<group>"; };
 		758CE33B3E1B99D873984589EA3DAF34 /* Pods-WordSearchTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordSearchTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		77EC9C8F0DF02E4B82DB8BB7EC006C61 /* DynamicBlurView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DynamicBlurView.modulemap; sourceTree = "<group>"; };
+		7BBB008C0CBA4725AC9A98289C86164F /* PopupDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupDialog.xcconfig; sourceTree = "<group>"; };
+		7BD6CC807E060BD97B158A816B089628 /* UIView+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "PopupDialog/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
 		7D0109BD18888E7BD9FD9F406C3C6DAF /* Pods-WordSearch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordSearch-Info.plist"; sourceTree = "<group>"; };
+		835E523F4D09CFD3EE15B3B3F2C4284A /* TagListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagListView.swift; path = TagListView/TagListView.swift; sourceTree = "<group>"; };
 		848A5AACA98AF346C0E2AECB4A6BA1C0 /* Pods-WordSearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WordSearch.modulemap"; sourceTree = "<group>"; };
 		8513C9FBBD4B9A0A74FB6F8AC6CB16C6 /* Pods-WordSearch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WordSearch-frameworks.sh"; sourceTree = "<group>"; };
 		85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TagListView.framework; path = TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C4A2D817E6CFFF31BF75161625FD5D /* DynamicBlurView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DynamicBlurView.framework; path = DynamicBlurView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		894591306FD9224E99DED1CDD8072D43 /* Pods_WordSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WordSearch.framework; path = "Pods-WordSearch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EBC49A8E40EC6E88311320A5E863C19 /* TagListView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagListView.modulemap; sourceTree = "<group>"; };
-		909F30854DC02CAF5678730D80345742 /* TagListView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-umbrella.h"; sourceTree = "<group>"; };
-		92494CBEA8BE8BD6F3BA7E782893B7E6 /* TagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = TagListView/TagView.swift; sourceTree = "<group>"; };
+		8A530B5075F239DB94BD698AE47A4710 /* DynamicBlurView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicBlurView.xcconfig; sourceTree = "<group>"; };
+		8B023456B34B3B740FCE056942C7ED57 /* TagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-prefix.pch"; sourceTree = "<group>"; };
+		9071E08774372FBE24A840A5C0CE24EF /* CaptureQuality.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureQuality.swift; path = Sources/DynamicBlurView/CaptureQuality.swift; sourceTree = "<group>"; };
+		94863EFDC9B84D480FE22F0B3A166706 /* TagListView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagListView.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F161D63B64D83709703C44DECD38BE0 /* LBConfettiView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LBConfettiView.xcconfig; sourceTree = "<group>"; };
+		A41C8FACD23617F005B8A30A4D313000 /* LBConfettiView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LBConfettiView-Info.plist"; sourceTree = "<group>"; };
+		A47ED98AAA98FB4721DF5E4ECF8AF4AF /* TrackingMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackingMode.swift; path = Sources/DynamicBlurView/TrackingMode.swift; sourceTree = "<group>"; };
+		A48A84793B6EB4D4D4573349EC09891E /* PresentationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationManager.swift; path = PopupDialog/Classes/PresentationManager.swift; sourceTree = "<group>"; };
 		AE33D5555C4957BD10328FE81258C13B /* Pods-WordSearch-WordSearchUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WordSearch-WordSearchUITests-frameworks.sh"; sourceTree = "<group>"; };
 		AF1575BCA71FC43D6B5D509343624FB5 /* Pods_WordSearch_WordSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WordSearch_WordSearchUITests.framework; path = "Pods-WordSearch-WordSearchUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A1A0D85E005689FCBFACC04645008E /* Pods-WordSearch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordSearch-acknowledgements.plist"; sourceTree = "<group>"; };
-		B4DE415075DA20E2253EAF3DF344B1BC /* TagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-prefix.pch"; sourceTree = "<group>"; };
-		BD4E907009AE999DCE62F6B347A27EC9 /* CloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseButton.swift; path = TagListView/CloseButton.swift; sourceTree = "<group>"; };
+		B3AEECBCBA5D4520FC7BD8049D5DFE90 /* LBConfettiView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LBConfettiView-dummy.m"; sourceTree = "<group>"; };
+		B6249D0DEDE09097FCB7FFE25FCBD3B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B7EA67052BA415B682D022A77B4C6656 /* CGContext+CGImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGContext+CGImage.swift"; path = "Sources/DynamicBlurView/CGContext+CGImage.swift"; sourceTree = "<group>"; };
+		B9AC62795E3016CD5EBAB626095CBE2C /* ConfettiStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfettiStyle.swift; path = LBConfettiView/Sources/ConfettiStyle.swift; sourceTree = "<group>"; };
+		BBDBC6368CE41AAD66C1AF760D14183C /* PopupDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PopupDialog.modulemap; sourceTree = "<group>"; };
+		BE950DF6184F2A6146E68C3CCA67E63B /* PresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationController.swift; path = PopupDialog/Classes/PresentationController.swift; sourceTree = "<group>"; };
 		C18609F4918ADB9D21E6D0115F6B75D0 /* Pods-WordSearch-WordSearchUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WordSearch-WordSearchUITests-dummy.m"; sourceTree = "<group>"; };
 		C2675D6D9148A9A0741034B967A0E9CC /* Pods-WordSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C61EA57B442729C2FD3AA65F53032A5E /* LBConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LBConfettiView.framework; path = LBConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89998B2BB180CCBD2BB9C1F2AB85092 /* UIViewController+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Visibility.swift"; path = "PopupDialog/Classes/UIViewController+Visibility.swift"; sourceTree = "<group>"; };
+		CC6CFC9D84A8336CE48855B853E298BE /* CloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseButton.swift; path = TagListView/CloseButton.swift; sourceTree = "<group>"; };
+		CC990E694E588EEE96EE3E56B2EE59D8 /* Confetti.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Confetti.xcassets; path = LBConfettiView/Assets/Confetti.xcassets; sourceTree = "<group>"; };
 		D69B8603DB592B770BD252A4AF2B2769 /* Pods-WordSearchTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WordSearchTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DBD23B2629EC41FAFF718708E582D5E6 /* UIImage+Blur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Blur.swift"; path = "Sources/DynamicBlurView/UIImage+Blur.swift"; sourceTree = "<group>"; };
+		DBD7F4CA3B8A004CCBB470EFAFC839DE /* PopupDialogDefaultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultViewController.swift; path = PopupDialog/Classes/PopupDialogDefaultViewController.swift; sourceTree = "<group>"; };
 		DD7924D8013A7192F37B25B9043EED5C /* Pods-WordSearch-WordSearchUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WordSearch-WordSearchUITests.modulemap"; sourceTree = "<group>"; };
 		DD9DECD0CBA7E25BABDAD0BC49C533C9 /* Pods-WordSearch-WordSearchUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordSearch-WordSearchUITests-Info.plist"; sourceTree = "<group>"; };
+		DE4322B43D2460027CD1D72D3B05CE8E /* UIImageView+Calculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Calculations.swift"; path = "PopupDialog/Classes/UIImageView+Calculations.swift"; sourceTree = "<group>"; };
 		DEA0FE83FB5B7A3F047BF77A2049F414 /* Pods-WordSearchTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WordSearchTests-Info.plist"; sourceTree = "<group>"; };
-		E918B828530C7A942BA850CD7A76873A /* TagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagListView-dummy.m"; sourceTree = "<group>"; };
+		E279E6ED93A9EEE3A18931B8FBECEB8E /* PopupDialogOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogOverlayView.swift; path = PopupDialog/Classes/PopupDialogOverlayView.swift; sourceTree = "<group>"; };
+		E40646F14766D45CDC7F2BEEDB30A71D /* TagListView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagListView-Info.plist"; sourceTree = "<group>"; };
+		ED10D17071A4224EFDF64B756ECE7AD1 /* LBConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LBConfettiView.swift; path = LBConfettiView/Sources/LBConfettiView.swift; sourceTree = "<group>"; };
+		EE610124EB97F25F61B5CA60A11E5B88 /* DynamicBlurView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DynamicBlurView-Info.plist"; sourceTree = "<group>"; };
+		F2109C5D0569A8687D8A29C506469B2B /* TagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagListView-dummy.m"; sourceTree = "<group>"; };
 		F302801C27BEF34926372782B677D07D /* Pods-WordSearch-WordSearchUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WordSearch-WordSearchUITests-umbrella.h"; sourceTree = "<group>"; };
 		F5A5FE7F762EFEDFB6C03AD2994EF964 /* Pods-WordSearch-WordSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WordSearch-WordSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7148F88978DE02787DB850E5C3904C3 /* BlurLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurLayer.swift; path = Sources/DynamicBlurView/BlurLayer.swift; sourceTree = "<group>"; };
+		F7A65A417CA97D3CC6F1F14CEC7AF9EF /* PopupDialogDefaultButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultButtons.swift; path = PopupDialog/Classes/PopupDialogDefaultButtons.swift; sourceTree = "<group>"; };
+		FC0E6BD7CD317EF5D70F167E66AAF6FA /* TagListView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		53F23EF31D3612BD60E0A47A59D1E1E7 /* Frameworks */ = {
+		632DD911A7D21FB69D9A0E244EA533DF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C18569174D872E823B5D9F356CBBBE1F /* Foundation.framework in Frameworks */,
+				437A215C6D99A48594138CD53B6C8A36 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BC92BC2D824F6241F79F18FA92BFA7C /* Frameworks */ = {
+		74F47434089ED97AF48B711E9FADBF5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				638FA270537DE39316B9E8974E5A13E9 /* Foundation.framework in Frameworks */,
+				4C6E460A6B911AFFD987F78AC59B7466 /* DynamicBlurView.framework in Frameworks */,
+				B18FE5EE478D75593AE4D0C6B1E6506F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9E271B43689D1DB742FF886524F7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EDE5A7A2ADFAD6A233AA470332B3B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A45E966183EB82C5AF0C9EAD289B977F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5999E251F473AFBC8E59186A8CABE1B5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +274,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				433C6AFA3D6810D14147229444003F87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65CA3D384260DCB7B4E58EA234ABEA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B45F788C4CE05D2DC0686432FB0EE22 /* Accelerate.framework in Frameworks */,
+				DCEE2E72739ADFB7890C33BC35099C01 /* Foundation.framework in Frameworks */,
+				00620E71264E0E954D667CEAD6BD0E99 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,49 +298,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11CAD7757322D5CEB8CB52FD877F79FB /* Support Files */ = {
+		0FF56D86966FE40D216E93CC5D82D44D /* DynamicBlurView */ = {
 			isa = PBXGroup;
 			children = (
-				8EBC49A8E40EC6E88311320A5E863C19 /* TagListView.modulemap */,
-				2F6E24DAA34C9EED0473BB66EBF73E3C /* TagListView.xcconfig */,
-				E918B828530C7A942BA850CD7A76873A /* TagListView-dummy.m */,
-				056C4675E47A62F4928ABF88E03C0576 /* TagListView-Info.plist */,
-				B4DE415075DA20E2253EAF3DF344B1BC /* TagListView-prefix.pch */,
-				909F30854DC02CAF5678730D80345742 /* TagListView-umbrella.h */,
+				F7148F88978DE02787DB850E5C3904C3 /* BlurLayer.swift */,
+				9071E08774372FBE24A840A5C0CE24EF /* CaptureQuality.swift */,
+				B7EA67052BA415B682D022A77B4C6656 /* CGContext+CGImage.swift */,
+				2E6E1DEC358CE4CC7932C6EC4054470F /* CGImage+Accelerate.swift */,
+				647686664206297563FA7467771441EB /* DynamicBlurView.h */,
+				4F7FBD8A6F1D169B86F6CFE9280F31F4 /* DynamicBlurView.swift */,
+				A47ED98AAA98FB4721DF5E4ECF8AF4AF /* TrackingMode.swift */,
+				DBD23B2629EC41FAFF718708E582D5E6 /* UIImage+Blur.swift */,
+				33BB22634C257E1EE44D80CB494D3A87 /* Support Files */,
+			);
+			name = DynamicBlurView;
+			path = DynamicBlurView;
+			sourceTree = "<group>";
+		};
+		33BB22634C257E1EE44D80CB494D3A87 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77EC9C8F0DF02E4B82DB8BB7EC006C61 /* DynamicBlurView.modulemap */,
+				8A530B5075F239DB94BD698AE47A4710 /* DynamicBlurView.xcconfig */,
+				0FB231F4422B3BEB7A3B42FAC8B377DC /* DynamicBlurView-dummy.m */,
+				EE610124EB97F25F61B5CA60A11E5B88 /* DynamicBlurView-Info.plist */,
+				154C860ED5C9DB3580CC28B82E14AD9F /* DynamicBlurView-prefix.pch */,
+				21FC872B0646B65A9186A2C73D640186 /* DynamicBlurView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DynamicBlurView";
+			sourceTree = "<group>";
+		};
+		35090FE5D47769CD75C981194728EBB4 /* TagListView */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CFC9D84A8336CE48855B853E298BE /* CloseButton.swift */,
+				835E523F4D09CFD3EE15B3B3F2C4284A /* TagListView.swift */,
+				3E92F690E8F8E714A05C87B7628C7CFD /* TagView.swift */,
+				3C92180BA24625FDE0A8DC8E01DAE78B /* Support Files */,
+			);
+			name = TagListView;
+			path = TagListView;
+			sourceTree = "<group>";
+		};
+		3C92180BA24625FDE0A8DC8E01DAE78B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94863EFDC9B84D480FE22F0B3A166706 /* TagListView.modulemap */,
+				4F183ADD525B0BE89AC0A111A187D65B /* TagListView.xcconfig */,
+				F2109C5D0569A8687D8A29C506469B2B /* TagListView-dummy.m */,
+				E40646F14766D45CDC7F2BEEDB30A71D /* TagListView-Info.plist */,
+				8B023456B34B3B740FCE056942C7ED57 /* TagListView-prefix.pch */,
+				FC0E6BD7CD317EF5D70F167E66AAF6FA /* TagListView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TagListView";
 			sourceTree = "<group>";
 		};
-		1332E43D250C39142E0CE7C0A2728AE8 /* Products */ = {
+		4BD16CFE4ACC4DA1DD62FF0126A7FF85 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				894591306FD9224E99DED1CDD8072D43 /* Pods_WordSearch.framework */,
-				AF1575BCA71FC43D6B5D509343624FB5 /* Pods_WordSearch_WordSearchUITests.framework */,
-				226659A0563B369D3819203242156A90 /* Pods_WordSearchTests.framework */,
-				85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		217EC39BA4F71DE31A11E62061855C17 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6ED866655A1BE1CEDC212E03DE222261 /* TagListView */,
+				0FF56D86966FE40D216E93CC5D82D44D /* DynamicBlurView */,
+				FB0AD4329609DBBA297AEE1D6367E8D2 /* LBConfettiView */,
+				B899958A520635116ED5CFE4BBEAC2E9 /* PopupDialog */,
+				35090FE5D47769CD75C981194728EBB4 /* TagListView */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		6ED866655A1BE1CEDC212E03DE222261 /* TagListView */ = {
+		653F4985C4F6DDBE745333904CDEF07C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BD4E907009AE999DCE62F6B347A27EC9 /* CloseButton.swift */,
-				4FAFD4576990B0B449028B7BDD237FF5 /* TagListView.swift */,
-				92494CBEA8BE8BD6F3BA7E782893B7E6 /* TagView.swift */,
-				11CAD7757322D5CEB8CB52FD877F79FB /* Support Files */,
+				CC990E694E588EEE96EE3E56B2EE59D8 /* Confetti.xcassets */,
 			);
-			name = TagListView;
-			path = TagListView;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6631BFEDEB18A290DA3BC3E45AA1FE28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86C4A2D817E6CFFF31BF75161625FD5D /* DynamicBlurView.framework */,
+				C61EA57B442729C2FD3AA65F53032A5E /* LBConfettiView.framework */,
+				894591306FD9224E99DED1CDD8072D43 /* Pods_WordSearch.framework */,
+				AF1575BCA71FC43D6B5D509343624FB5 /* Pods_WordSearch_WordSearchUITests.framework */,
+				226659A0563B369D3819203242156A90 /* Pods_WordSearchTests.framework */,
+				34FB964502259D0FF233CE71CFDD2A71 /* PopupDialog.framework */,
+				85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7F5A6EE76DC53908F924AC751F17098F /* Targets Support Files */ = {
@@ -181,6 +396,29 @@
 				F3F0CAEF22E6BB4A5E9DE90549E8821F /* Pods-WordSearchTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7F9D3681372E9E3EC2FE2A4BE7253AF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48605496EA7A8E9439C53C0835B30AC5 /* DynamicBlurView.framework */,
+				EF560866D2792929CF9E42DB507B41B6 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C8B529E9DF30082769F7534B4DD11EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52D9BF151C4E5D47BD1BC5148B62D4A2 /* LBConfettiView.modulemap */,
+				9F161D63B64D83709703C44DECD38BE0 /* LBConfettiView.xcconfig */,
+				B3AEECBCBA5D4520FC7BD8049D5DFE90 /* LBConfettiView-dummy.m */,
+				A41C8FACD23617F005B8A30A4D313000 /* LBConfettiView-Info.plist */,
+				7466A8B52361D16A3D12C414819E25DE /* LBConfettiView-prefix.pch */,
+				136DA5904A077FE4B577AA26F6A40F53 /* LBConfettiView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LBConfettiView";
 			sourceTree = "<group>";
 		};
 		99FBB5E604CAAC130F2074E0BACC6CF3 /* Pods-WordSearch */ = {
@@ -200,31 +438,54 @@
 			path = "Target Support Files/Pods-WordSearch";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		AEAA5390345920408D0F81B979BB5491 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				BBDBC6368CE41AAD66C1AF760D14183C /* PopupDialog.modulemap */,
+				7BBB008C0CBA4725AC9A98289C86164F /* PopupDialog.xcconfig */,
+				0C238BA7DBF8202B588780B488B69265 /* PopupDialog-dummy.m */,
+				5170C8C794C19BC043E6CCD420EED926 /* PopupDialog-Info.plist */,
+				66F3D534DAC00BC9F72A38C679D550B8 /* PopupDialog-prefix.pch */,
+				49CC6409E3F8BE1FBBA3A0C987F3C932 /* PopupDialog-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/PopupDialog";
+			sourceTree = "<group>";
+		};
+		B899958A520635116ED5CFE4BBEAC2E9 /* PopupDialog */ = {
+			isa = PBXGroup;
+			children = (
+				01EEF83EF64F9EC55B304B4A063001B0 /* InteractiveTransition.swift */,
+				1EDF8C6DC8DB10FE8A59BBCFDEFF7AE4 /* PopupDialog.swift */,
+				3CE246E4EB38D25DFACF51CB6700C284 /* PopupDialog+Keyboard.swift */,
+				5154A7C7E94ABBC9CB6323BC2FBC2A25 /* PopupDialogButton.swift */,
+				47FBEC241DA2A77424955629C9734A7B /* PopupDialogContainerView.swift */,
+				F7A65A417CA97D3CC6F1F14CEC7AF9EF /* PopupDialogDefaultButtons.swift */,
+				2516A38352D254E856CCFD252D398C77 /* PopupDialogDefaultView.swift */,
+				DBD7F4CA3B8A004CCBB470EFAFC839DE /* PopupDialogDefaultViewController.swift */,
+				E279E6ED93A9EEE3A18931B8FBECEB8E /* PopupDialogOverlayView.swift */,
+				BE950DF6184F2A6146E68C3CCA67E63B /* PresentationController.swift */,
+				A48A84793B6EB4D4D4573349EC09891E /* PresentationManager.swift */,
+				5BEC1823B9B2E729B71F0ACCD1C95044 /* TransitionAnimations.swift */,
+				5494DB055ECA14A5CF083FC4FE90A771 /* TransitionAnimator.swift */,
+				DE4322B43D2460027CD1D72D3B05CE8E /* UIImageView+Calculations.swift */,
+				7BD6CC807E060BD97B158A816B089628 /* UIView+Animations.swift */,
+				C89998B2BB180CCBD2BB9C1F2AB85092 /* UIViewController+Visibility.swift */,
+				AEAA5390345920408D0F81B979BB5491 /* Support Files */,
+			);
+			name = PopupDialog;
+			path = PopupDialog;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				217EC39BA4F71DE31A11E62061855C17 /* Pods */,
-				1332E43D250C39142E0CE7C0A2728AE8 /* Products */,
+				7F9D3681372E9E3EC2FE2A4BE7253AF1 /* Frameworks */,
+				4BD16CFE4ACC4DA1DD62FF0126A7FF85 /* Pods */,
+				6631BFEDEB18A290DA3BC3E45AA1FE28 /* Products */,
 				7F5A6EE76DC53908F924AC751F17098F /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EB57056CC3F574431DD1B59599789E50 /* Pods-WordSearch-WordSearchUITests */ = {
@@ -244,6 +505,16 @@
 			path = "Target Support Files/Pods-WordSearch-WordSearchUITests";
 			sourceTree = "<group>";
 		};
+		EF560866D2792929CF9E42DB507B41B6 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				698C7792749D8F8A29699C4E3B5CA919 /* Accelerate.framework */,
+				4C277DDAFE68A195EDF8E21573219773 /* Foundation.framework */,
+				B6249D0DEDE09097FCB7FFE25FCBD3B7 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		F3F0CAEF22E6BB4A5E9DE90549E8821F /* Pods-WordSearchTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,22 +531,45 @@
 			path = "Target Support Files/Pods-WordSearchTests";
 			sourceTree = "<group>";
 		};
+		FB0AD4329609DBBA297AEE1D6367E8D2 /* LBConfettiView */ = {
+			isa = PBXGroup;
+			children = (
+				1B61A5A797EFCA0AD339EBA6949BC7F6 /* ConfettiScale.swift */,
+				B9AC62795E3016CD5EBAB626095CBE2C /* ConfettiStyle.swift */,
+				2DA7414270D3B25B1ECEE07E4F311B4F /* LBConfettiView.h */,
+				ED10D17071A4224EFDF64B756ECE7AD1 /* LBConfettiView.swift */,
+				653F4985C4F6DDBE745333904CDEF07C /* Resources */,
+				8C8B529E9DF30082769F7534B4DD11EF /* Support Files */,
+			);
+			name = LBConfettiView;
+			path = LBConfettiView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		271000B032F93EF60D247A2F03E3D07F /* Headers */ = {
+		0C2BC20E5C7CE65243503B03A0A7F227 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5845395625813602747927F3691AC52 /* Pods-WordSearch-umbrella.h in Headers */,
+				E7D52E6BAC48EA0D927F16D671ADBD77 /* LBConfettiView-umbrella.h in Headers */,
+				1CEEB9D3EA2AD1A94E1F3022E1675CF6 /* LBConfettiView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61374AD13C59AC07B6F35B7E10515A2F /* Headers */ = {
+		82672E5FF63FA0E0F1F881550941AFFB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66566ED7A33B95CF805A9CA0C941CE05 /* Pods-WordSearch-WordSearchUITests-umbrella.h in Headers */,
+				84D9794DEFBA9D7289AED9466833DCC9 /* Pods-WordSearch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87353A53FB8FA55F6215AC51654C8C0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928FFA6E7256231E743768EBC78E36A7 /* PopupDialog-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,9 +589,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD91A0408709E5CE60C515237C69EEE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18643D4F9BC327B1E5B9175F4260AC0E /* DynamicBlurView-umbrella.h in Headers */,
+				37B464DA33104653FA64ACDD691F8A5F /* DynamicBlurView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCDD469FBDAA9945988946723AA4F47C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCA006492A47773ECE73B1B7058067D /* Pods-WordSearch-WordSearchUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6E71929B582F8CD57B3DC1FD6560F047 /* PopupDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7508D556E6C0879FE57E3E574C62AE /* Build configuration list for PBXNativeTarget "PopupDialog" */;
+			buildPhases = (
+				87353A53FB8FA55F6215AC51654C8C0E /* Headers */,
+				45888BA4605C36782FAFEAC2D00E6CD3 /* Sources */,
+				74F47434089ED97AF48B711E9FADBF5C /* Frameworks */,
+				51F44C6F0DFF3643706A346EC44D61E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A0F55816EC0A47F2B5F6C7CA549559A /* PBXTargetDependency */,
+			);
+			name = PopupDialog;
+			productName = PopupDialog;
+			productReference = 34FB964502259D0FF233CE71CFDD2A71 /* PopupDialog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00E17D5B863CDCF74DE6FA3A6C1300F /* Build configuration list for PBXNativeTarget "DynamicBlurView" */;
+			buildPhases = (
+				BD91A0408709E5CE60C515237C69EEE0 /* Headers */,
+				64D4719150E9FEC3CDDBB82624177D73 /* Sources */,
+				E65CA3D384260DCB7B4E58EA234ABEA5 /* Frameworks */,
+				4991E03E196B947CF16368E88975E33C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicBlurView;
+			productName = DynamicBlurView;
+			productReference = 86C4A2D817E6CFFF31BF75161625FD5D /* DynamicBlurView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		82254F34E2F157255ED349715DAB908B /* LBConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D9F802A87161C1E685D1C861ACE41D3 /* Build configuration list for PBXNativeTarget "LBConfettiView" */;
+			buildPhases = (
+				0C2BC20E5C7CE65243503B03A0A7F227 /* Headers */,
+				7ECDBACD226489F56EAD9358E0AFA79A /* Sources */,
+				9B9E271B43689D1DB742FF886524F7FB /* Frameworks */,
+				6049504E2E1B9CDD57D9B5EAA298843B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LBConfettiView;
+			productName = LBConfettiView;
+			productReference = C61EA57B442729C2FD3AA65F53032A5E /* LBConfettiView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		944FA372C7D6E4F9EBEB05ECA071A6BF /* Pods-WordSearchTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FBA560664A2A77287252BB9648A89F8 /* Build configuration list for PBXNativeTarget "Pods-WordSearchTests" */;
@@ -337,17 +703,20 @@
 		};
 		C2222DA01F370B284CCDDF7F06FDB7BC /* Pods-WordSearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C4A26E96C893121BF960F22055E7D15 /* Build configuration list for PBXNativeTarget "Pods-WordSearch" */;
+			buildConfigurationList = 6D5764C6BD74BA1B56514D45B1BC3469 /* Build configuration list for PBXNativeTarget "Pods-WordSearch" */;
 			buildPhases = (
-				271000B032F93EF60D247A2F03E3D07F /* Headers */,
-				7DD6D7E0ADCFD8A0B50833055ED5BC77 /* Sources */,
-				53F23EF31D3612BD60E0A47A59D1E1E7 /* Frameworks */,
-				776043207C5EEC7AFB53346D83E87095 /* Resources */,
+				82672E5FF63FA0E0F1F881550941AFFB /* Headers */,
+				36920CB1E094FA80CABB9A4F46C549F8 /* Sources */,
+				A45E966183EB82C5AF0C9EAD289B977F /* Frameworks */,
+				720385BB13FF9009D0F0F393135F1E90 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1F30525D92C8CEA50B561DFD7E8079E3 /* PBXTargetDependency */,
+				D9AAED87EDA0BD1889D1672B98C96FE2 /* PBXTargetDependency */,
+				EB0AC6A057F3709A2C4416F66B1ED6A8 /* PBXTargetDependency */,
+				06F688E1805485A3F9B6F61E5CEFD7D8 /* PBXTargetDependency */,
+				6215C31557908645961DF247900910BD /* PBXTargetDependency */,
 			);
 			name = "Pods-WordSearch";
 			productName = "Pods-WordSearch";
@@ -356,17 +725,20 @@
 		};
 		E2DD47D62687C2E19AE393253C5B7632 /* Pods-WordSearch-WordSearchUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0D082A8B60DF840738DB72A98679DAC /* Build configuration list for PBXNativeTarget "Pods-WordSearch-WordSearchUITests" */;
+			buildConfigurationList = 6F5227C8154210E17A9C68359D4FF474 /* Build configuration list for PBXNativeTarget "Pods-WordSearch-WordSearchUITests" */;
 			buildPhases = (
-				61374AD13C59AC07B6F35B7E10515A2F /* Headers */,
-				92264C635D639F56055A3B777CE08FF7 /* Sources */,
-				5BC92BC2D824F6241F79F18FA92BFA7C /* Frameworks */,
-				0013D10821B6E6A6D836ECA9DF7231E7 /* Resources */,
+				CCDD469FBDAA9945988946723AA4F47C /* Headers */,
+				91B64950EEDDC4ECABF6C74002AD0980 /* Sources */,
+				632DD911A7D21FB69D9A0E244EA533DF /* Frameworks */,
+				98FEC29DAB48A72D1DC3253F7844F927 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AC9EDBEBDB3EDA1A81B3793236E53744 /* PBXTargetDependency */,
+				D50AC5599FC42B5252C0D9EBCEDD62EC /* PBXTargetDependency */,
+				F5028D7195DCD4A8BE71ED115DEEE48F /* PBXTargetDependency */,
+				1F11855C7D4B8AC366F78098039CDEF1 /* PBXTargetDependency */,
+				5A40D3D7DBD9A0FCF6772E92A47B2EB9 /* PBXTargetDependency */,
 			);
 			name = "Pods-WordSearch-WordSearchUITests";
 			productName = "Pods-WordSearch-WordSearchUITests";
@@ -383,7 +755,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -391,30 +763,48 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1332E43D250C39142E0CE7C0A2728AE8 /* Products */;
+			productRefGroup = 6631BFEDEB18A290DA3BC3E45AA1FE28 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */,
+				82254F34E2F157255ED349715DAB908B /* LBConfettiView */,
 				C2222DA01F370B284CCDDF7F06FDB7BC /* Pods-WordSearch */,
 				E2DD47D62687C2E19AE393253C5B7632 /* Pods-WordSearch-WordSearchUITests */,
 				944FA372C7D6E4F9EBEB05ECA071A6BF /* Pods-WordSearchTests */,
+				6E71929B582F8CD57B3DC1FD6560F047 /* PopupDialog */,
 				B43A58FC22C898DE29F6E12FE9636507 /* TagListView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0013D10821B6E6A6D836ECA9DF7231E7 /* Resources */ = {
+		2A07AFFB08839EFA43622E8123B87EEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A07AFFB08839EFA43622E8123B87EEA /* Resources */ = {
+		4991E03E196B947CF16368E88975E33C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51F44C6F0DFF3643706A346EC44D61E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6049504E2E1B9CDD57D9B5EAA298843B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258EADD7FC682260189BB3AE6E548C2B /* Confetti.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +815,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		776043207C5EEC7AFB53346D83E87095 /* Resources */ = {
+		720385BB13FF9009D0F0F393135F1E90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98FEC29DAB48A72D1DC3253F7844F927 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -435,6 +832,53 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		36920CB1E094FA80CABB9A4F46C549F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A99CA2C65FD78FEAC4F8A3705182C0 /* Pods-WordSearch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45888BA4605C36782FAFEAC2D00E6CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC78D8A8141D8268D6382866CDF8F16A /* InteractiveTransition.swift in Sources */,
+				B2F489FB022F836FB35B3FEABF68903C /* PopupDialog+Keyboard.swift in Sources */,
+				73D0683E05F3565AE7175088B7CE6DC0 /* PopupDialog-dummy.m in Sources */,
+				5546955AFBE8D354D17380A294A25CE6 /* PopupDialog.swift in Sources */,
+				F82E29CC1BF7165FF77D9C4A387357A7 /* PopupDialogButton.swift in Sources */,
+				225555187BFD67F7F6DADEA6C73C567F /* PopupDialogContainerView.swift in Sources */,
+				A254857FE369E684CBE3B4F6F292239D /* PopupDialogDefaultButtons.swift in Sources */,
+				C9D87D93855954B4B23CDB647DEB7D0E /* PopupDialogDefaultView.swift in Sources */,
+				030FCBCF4FD8CD3905C39EDA654D29BD /* PopupDialogDefaultViewController.swift in Sources */,
+				A94100505467526DB734FAB115BF715C /* PopupDialogOverlayView.swift in Sources */,
+				D9F9E9336475EE7188F8F29DDE0A2EB1 /* PresentationController.swift in Sources */,
+				83B9E5412A63412A151E0092BF6AF7CA /* PresentationManager.swift in Sources */,
+				7A009CFEBD7D09FB5DA532F54EB9FBEF /* TransitionAnimations.swift in Sources */,
+				169D250E01A497F88370028FD950A37C /* TransitionAnimator.swift in Sources */,
+				0F82656B116745EE31DB985B8096CD60 /* UIImageView+Calculations.swift in Sources */,
+				37AFD441D3948E62ABBFFBDC662F6DB6 /* UIView+Animations.swift in Sources */,
+				D82DC5AAA5AA0E1A33EFE457C493D755 /* UIViewController+Visibility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D4719150E9FEC3CDDBB82624177D73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60BE1FA828EA5AB3878B9908E2ACFDE /* BlurLayer.swift in Sources */,
+				019475E72F433C3E51895A3CD999822F /* CaptureQuality.swift in Sources */,
+				303898D9A1F232CB589A514C4EFFD644 /* CGContext+CGImage.swift in Sources */,
+				9CB73C2028D1E16DFE87289362792A4F /* CGImage+Accelerate.swift in Sources */,
+				7EBE128BBA4CC34DBF4853B1E747C724 /* DynamicBlurView-dummy.m in Sources */,
+				19C4DC14CC713DC68F954B6CC2F38DE7 /* DynamicBlurView.swift in Sources */,
+				535CD4014DCA990CEE8A4783486170FB /* TrackingMode.swift in Sources */,
+				7FF0649D3237A34599DA73541656009B /* UIImage+Blur.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71A95CD7D3E97B7EFC085FBFF0608760 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,19 +887,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DD6D7E0ADCFD8A0B50833055ED5BC77 /* Sources */ = {
+		7ECDBACD226489F56EAD9358E0AFA79A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50C4C8509B899F2912085C1B673C370 /* Pods-WordSearch-dummy.m in Sources */,
+				5A3C43223F9D2CC4868BAA87CA795CAB /* ConfettiScale.swift in Sources */,
+				F9CBF267B7E13D2DDDF0DB1EB6DE9F9B /* ConfettiStyle.swift in Sources */,
+				64036806DEB2ED171FD515DF96525F8F /* LBConfettiView-dummy.m in Sources */,
+				DD02060CEA017F21A85B2FCCDE5D85BA /* LBConfettiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92264C635D639F56055A3B777CE08FF7 /* Sources */ = {
+		91B64950EEDDC4ECABF6C74002AD0980 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19827E1F0EDB8D15C4E4A0F47F579D59 /* Pods-WordSearch-WordSearchUITests-dummy.m in Sources */,
+				03F0F20C029BAF05CA12A64947C44160 /* Pods-WordSearch-WordSearchUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,17 +920,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1F30525D92C8CEA50B561DFD7E8079E3 /* PBXTargetDependency */ = {
+		06F688E1805485A3F9B6F61E5CEFD7D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TagListView;
-			target = B43A58FC22C898DE29F6E12FE9636507 /* TagListView */;
-			targetProxy = DFE2DF6D8F8B37AE7D37DB18A04F8BBF /* PBXContainerItemProxy */;
+			name = PopupDialog;
+			target = 6E71929B582F8CD57B3DC1FD6560F047 /* PopupDialog */;
+			targetProxy = 4E66DAE67FBD197B9CB9678A2E20E2F0 /* PBXContainerItemProxy */;
 		};
-		AC9EDBEBDB3EDA1A81B3793236E53744 /* PBXTargetDependency */ = {
+		1F11855C7D4B8AC366F78098039CDEF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PopupDialog;
+			target = 6E71929B582F8CD57B3DC1FD6560F047 /* PopupDialog */;
+			targetProxy = 92907265B149CE418A7413F0D79293C1 /* PBXContainerItemProxy */;
+		};
+		5A40D3D7DBD9A0FCF6772E92A47B2EB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TagListView;
 			target = B43A58FC22C898DE29F6E12FE9636507 /* TagListView */;
-			targetProxy = 7E53EC7B75F8F9B007F085C55196F8DD /* PBXContainerItemProxy */;
+			targetProxy = 1E2E303EB6DD030421A83C5DC022BA5F /* PBXContainerItemProxy */;
+		};
+		6215C31557908645961DF247900910BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TagListView;
+			target = B43A58FC22C898DE29F6E12FE9636507 /* TagListView */;
+			targetProxy = 78A6CD59060948C49A41CBB251FC28BC /* PBXContainerItemProxy */;
+		};
+		7A0F55816EC0A47F2B5F6C7CA549559A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicBlurView;
+			target = 7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */;
+			targetProxy = 2763FCA98104FEE93EB4E54D32DDF454 /* PBXContainerItemProxy */;
 		};
 		CF321B04A6201D5CA81F6A609C5A3590 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -491,9 +956,68 @@
 			target = C2222DA01F370B284CCDDF7F06FDB7BC /* Pods-WordSearch */;
 			targetProxy = DB80997AC4D51D9C24C0D49009EDB567 /* PBXContainerItemProxy */;
 		};
+		D50AC5599FC42B5252C0D9EBCEDD62EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicBlurView;
+			target = 7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */;
+			targetProxy = FE6B4C7FE04F9B6E0D0C44F43A081B32 /* PBXContainerItemProxy */;
+		};
+		D9AAED87EDA0BD1889D1672B98C96FE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicBlurView;
+			target = 7D914FA2F03C860D5133BA2DB87C594A /* DynamicBlurView */;
+			targetProxy = 99A7FDCCCC2B2EE47FBB6DB9C0A20D0D /* PBXContainerItemProxy */;
+		};
+		EB0AC6A057F3709A2C4416F66B1ED6A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LBConfettiView;
+			target = 82254F34E2F157255ED349715DAB908B /* LBConfettiView */;
+			targetProxy = B531B4AC4AB0C2323F26B5705744E3C9 /* PBXContainerItemProxy */;
+		};
+		F5028D7195DCD4A8BE71ED115DEEE48F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LBConfettiView;
+			target = 82254F34E2F157255ED349715DAB908B /* LBConfettiView */;
+			targetProxy = CDD267BCF678EFDFD60ED08C897A2B36 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0A2FFE8F28A4F16DB74C1FD28F0E4DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F161D63B64D83709703C44DECD38BE0 /* LBConfettiView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LBConfettiView/LBConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LBConfettiView/LBConfettiView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LBConfettiView/LBConfettiView.modulemap";
+				PRODUCT_MODULE_NAME = LBConfettiView;
+				PRODUCT_NAME = LBConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		0CBFCA32633A58DF3B47C0CFD178C65B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0CF3EB40A666D5ECF433832C230E0815 /* Pods-WordSearchTests.release.xcconfig */;
@@ -593,9 +1117,83 @@
 			};
 			name = Release;
 		};
-		643AC913E20F4483E39D403C7026D8F4 /* Release */ = {
+		4EA6E6EA610C0116B87722F3BB7B093A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7131768103E0638E7E41E945CFC94F3F /* Pods-WordSearch-WordSearchUITests.release.xcconfig */;
+			baseConfigurationReference = 8A530B5075F239DB94BD698AE47A4710 /* DynamicBlurView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicBlurView/DynamicBlurView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicBlurView/DynamicBlurView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DynamicBlurView/DynamicBlurView.modulemap";
+				PRODUCT_MODULE_NAME = DynamicBlurView;
+				PRODUCT_NAME = DynamicBlurView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5088FF85C82C6C1CB59CD81A6333B701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3106317D67622DAEFF9E1ED303ABF791 /* Pods-WordSearch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WordSearch/Pods-WordSearch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WordSearch/Pods-WordSearch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79E337208A3B74296DF8AABA422759B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5A5FE7F762EFEDFB6C03AD2994EF964 /* Pods-WordSearch-WordSearchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -626,15 +1224,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		898A65EABF4DD74E384325288569CFFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F6E24DAA34C9EED0473BB66EBF73E3C /* TagListView.xcconfig */;
+			baseConfigurationReference = 4F183ADD525B0BE89AC0A111A187D65B /* TagListView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -705,119 +1302,7 @@
 			};
 			name = Debug;
 		};
-		9A956F348F0DF81EB0EB344FAFB0C423 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5A5FE7F762EFEDFB6C03AD2994EF964 /* Pods-WordSearch-WordSearchUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WordSearch-WordSearchUITests/Pods-WordSearch-WordSearchUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WordSearch-WordSearchUITests/Pods-WordSearch-WordSearchUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AA3FC60BE029C03B97DE9229F4477A6A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F6E24DAA34C9EED0473BB66EBF73E3C /* TagListView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
-				PRODUCT_MODULE_NAME = TagListView;
-				PRODUCT_NAME = TagListView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BBA39F46612D2B0C2B6453B6EE081A1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3106317D67622DAEFF9E1ED303ABF791 /* Pods-WordSearch.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WordSearch/Pods-WordSearch-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WordSearch/Pods-WordSearch.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E126D74BF7835E0F39F17FD9885E8147 /* Release */ = {
+		A0B7C7D8EBB6A2D9E133836153C1858F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73740456D2B57549CAD06441372CD5F7 /* Pods-WordSearch.release.xcconfig */;
 			buildSettings = {
@@ -855,6 +1340,189 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		A6D3481563301AEE2CDF25C874FDE857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A530B5075F239DB94BD698AE47A4710 /* DynamicBlurView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicBlurView/DynamicBlurView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicBlurView/DynamicBlurView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DynamicBlurView/DynamicBlurView.modulemap";
+				PRODUCT_MODULE_NAME = DynamicBlurView;
+				PRODUCT_NAME = DynamicBlurView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA3FC60BE029C03B97DE9229F4477A6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F183ADD525B0BE89AC0A111A187D65B /* TagListView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TagListView/TagListView.modulemap";
+				PRODUCT_MODULE_NAME = TagListView;
+				PRODUCT_NAME = TagListView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE8E1A7B166BCB0C00B4FDD39680340C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BBB008C0CBA4725AC9A98289C86164F /* PopupDialog.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupDialog/PopupDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
+				PRODUCT_MODULE_NAME = PopupDialog;
+				PRODUCT_NAME = PopupDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0D8176C9EED727147B059E52E5EC57C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7131768103E0638E7E41E945CFC94F3F /* Pods-WordSearch-WordSearchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WordSearch-WordSearchUITests/Pods-WordSearch-WordSearchUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WordSearch-WordSearchUITests/Pods-WordSearch-WordSearchUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D824AB577D1FA22E4A7E8FC1A74C89EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BBB008C0CBA4725AC9A98289C86164F /* PopupDialog.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupDialog/PopupDialog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
+				PRODUCT_MODULE_NAME = PopupDialog;
+				PRODUCT_NAME = PopupDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -920,9 +1588,54 @@
 			};
 			name = Debug;
 		};
+		FBDBC14EFDD5469CA98FB6F712D42636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F161D63B64D83709703C44DECD38BE0 /* LBConfettiView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LBConfettiView/LBConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LBConfettiView/LBConfettiView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LBConfettiView/LBConfettiView.modulemap";
+				PRODUCT_MODULE_NAME = LBConfettiView;
+				PRODUCT_NAME = LBConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D9F802A87161C1E685D1C861ACE41D3 /* Build configuration list for PBXNativeTarget "LBConfettiView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2FFE8F28A4F16DB74C1FD28F0E4DD9 /* Debug */,
+				FBDBC14EFDD5469CA98FB6F712D42636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -941,6 +1654,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6D5764C6BD74BA1B56514D45B1BC3469 /* Build configuration list for PBXNativeTarget "Pods-WordSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5088FF85C82C6C1CB59CD81A6333B701 /* Debug */,
+				A0B7C7D8EBB6A2D9E133836153C1858F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F5227C8154210E17A9C68359D4FF474 /* Build configuration list for PBXNativeTarget "Pods-WordSearch-WordSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E337208A3B74296DF8AABA422759B1 /* Debug */,
+				D0D8176C9EED727147B059E52E5EC57C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6FBA560664A2A77287252BB9648A89F8 /* Build configuration list for PBXNativeTarget "Pods-WordSearchTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -950,20 +1681,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C4A26E96C893121BF960F22055E7D15 /* Build configuration list for PBXNativeTarget "Pods-WordSearch" */ = {
+		B00E17D5B863CDCF74DE6FA3A6C1300F /* Build configuration list for PBXNativeTarget "DynamicBlurView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBA39F46612D2B0C2B6453B6EE081A1E /* Debug */,
-				E126D74BF7835E0F39F17FD9885E8147 /* Release */,
+				A6D3481563301AEE2CDF25C874FDE857 /* Debug */,
+				4EA6E6EA610C0116B87722F3BB7B093A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0D082A8B60DF840738DB72A98679DAC /* Build configuration list for PBXNativeTarget "Pods-WordSearch-WordSearchUITests" */ = {
+		BC7508D556E6C0879FE57E3E574C62AE /* Build configuration list for PBXNativeTarget "PopupDialog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A956F348F0DF81EB0EB344FAFB0C423 /* Debug */,
-				643AC913E20F4483E39D403C7026D8F4 /* Release */,
+				D824AB577D1FA22E4A7E8FC1A74C89EA /* Debug */,
+				CE8E1A7B166BCB0C00B4FDD39680340C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

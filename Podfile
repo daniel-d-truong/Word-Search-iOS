@@ -7,6 +7,8 @@ target 'WordSearch' do
 
   # Pods for WordSearch
   pod 'TagListView', '~> 1.0'
+  pod 'LBConfettiView', '~> 1.0'
+  pod 'PopupDialog', '~> 1.1'
 
   target 'WordSearchTests' do
     inherit! :search_paths

@@ -1,16 +1,28 @@
 PODS:
+  - DynamicBlurView (4.1.0)
+  - LBConfettiView (1.0.0)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
   - TagListView (1.4.0)
 
 DEPENDENCIES:
+  - LBConfettiView (~> 1.0)
+  - PopupDialog (~> 1.1)
   - TagListView (~> 1.0)
 
 SPEC REPOS:
   trunk:
+    - DynamicBlurView
+    - LBConfettiView
+    - PopupDialog
     - TagListView
 
 SPEC CHECKSUMS:
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
+  LBConfettiView: 29e99668b3c0dca25160486dd593f91a0ceeca8e
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
   TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
 
-PODFILE CHECKSUM: 0b0f1794d088519c293d140c5a161dc5bd633f4e
+PODFILE CHECKSUM: a1b83bfa7bda9eea0d74be6a0c7c5c93fa532687
 
 COCOAPODS: 1.8.4
