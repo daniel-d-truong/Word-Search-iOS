@@ -1,0 +1,6 @@
+framework module Pods_WordSearch_WordSearchUITests {
+  umbrella header "Pods-WordSearch-WordSearchUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
